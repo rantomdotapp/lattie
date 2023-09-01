@@ -1,0 +1,86 @@
+{
+  "AAVE.e": {
+    "chain": "avalanche",
+    "symbol": "AAVE.e",
+    "decimals": 18,
+    "address": "0x63a72806098bd3d9520cc43356dd78afe5d386d9"
+  },
+  "BTC.b": {
+    "chain": "avalanche",
+    "symbol": "BTC.b",
+    "decimals": 8,
+    "address": "0x152b9d0fdc40c096757f570a51e494bd4b943e50"
+  },
+  "DAI.e": {
+    "chain": "avalanche",
+    "symbol": "DAI.e",
+    "decimals": 18,
+    "address": "0xd586e7f844cea2f87f50152665bcbc2c279d8d70"
+  },
+  "FRAX": {
+    "chain": "avalanche",
+    "symbol": "FRAX",
+    "decimals": 18,
+    "address": "0xd24c2ad096400b6fbcd2ad8b24e7acbc21a1da64"
+  },
+  "LINK.e": {
+    "chain": "avalanche",
+    "symbol": "LINK.e",
+    "decimals": 18,
+    "address": "0x5947bb275c521040051d82396192181b413227a3"
+  },
+  "MAI": {
+    "chain": "avalanche",
+    "address": "0x5c49b268c9841aff1cc3b0a418ff5c3442ee3f3b",
+    "symbol": "MAI",
+    "decimals": 18
+  },
+  "USDC": {
+    "chain": "avalanche",
+    "symbol": "USDC",
+    "decimals": 6,
+    "address": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+  },
+  "USDC.e": {
+    "chain": "avalanche",
+    "symbol": "USDC.e",
+    "decimals": 6,
+    "address": "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664"
+  },
+  "USDT": {
+    "chain": "avalanche",
+    "symbol": "USDT",
+    "decimals": 6,
+    "address": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7"
+  },
+  "USDT.e": {
+    "chain": "avalanche",
+    "symbol": "USDT.e",
+    "decimals": 6,
+    "address": "0xc7198437980c041c805a1edcba50c1ce5db95118"
+  },
+  "WAVAX": {
+    "chain": "avalanche",
+    "symbol": "WAVAX",
+    "decimals": 18,
+    "address": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"
+  },
+  "WBTC.e": {
+    "chain": "avalanche",
+    "symbol": "WBTC.e",
+    "decimals": 8,
+    "address": "0x50b7545627a5162f82a992c33b87adc75187b218"
+  },
+  "WETH.e": {
+    "chain": "avalanche",
+    "symbol": "WETH.e",
+    "decimals": 18,
+    "address": "0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab"
+  },
+  "sAVAX": {
+    "chain": "avalanche",
+    "symbol": "sAVAX",
+    "decimals": 18,
+    "address": "0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be"
+  }
+}

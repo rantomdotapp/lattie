@@ -1,0 +1,92 @@
+{
+  "AAVE": {
+    "chain": "arbitrum",
+    "symbol": "AAVE",
+    "decimals": 18,
+    "address": "0xba5ddd1f9d7f570dc94a51479a000e3bce967196"
+  },
+  "ARB": {
+    "chain": "arbitrum",
+    "symbol": "ARB",
+    "decimals": 18,
+    "address": "0x912ce59144191c1204e64559fe8253a0e49e6548"
+  },
+  "DAI": {
+    "chain": "arbitrum",
+    "symbol": "DAI",
+    "decimals": 18,
+    "address": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1"
+  },
+  "EURS": {
+    "chain": "arbitrum",
+    "address": "0xd22a58f79e9481d1a88e00c343885a588b34b68b",
+    "symbol": "EURS",
+    "decimals": 2
+  },
+  "FRAX": {
+    "chain": "arbitrum",
+    "address": "0x17fc002b466eec40dae837fc4be5c67993ddbd6f",
+    "symbol": "FRAX",
+    "decimals": 18
+  },
+  "LINK": {
+    "chain": "arbitrum",
+    "symbol": "LINK",
+    "decimals": 18,
+    "address": "0xf97f4df75117a78c1a5a0dbb814af92458539fb4"
+  },
+  "LUSD": {
+    "chain": "arbitrum",
+    "symbol": "LUSD",
+    "decimals": 18,
+    "address": "0x93b346b6bc2548da6a1e7d98e9a421b42541425b"
+  },
+  "MAI": {
+    "chain": "arbitrum",
+    "address": "0x3f56e0c36d275367b8c502090edf38289b3dea0d",
+    "symbol": "MAI",
+    "decimals": 18
+  },
+  "USDC": {
+    "chain": "arbitrum",
+    "symbol": "USDC",
+    "decimals": 6,
+    "address": "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+  },
+  "USDC.e": {
+    "chain": "arbitrum",
+    "symbol": "USDC.e",
+    "decimals": 6,
+    "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
+  },
+  "USDT": {
+    "chain": "arbitrum",
+    "symbol": "USDT",
+    "decimals": 6,
+    "address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"
+  },
+  "WBTC": {
+    "chain": "arbitrum",
+    "symbol": "WBTC",
+    "decimals": 8,
+    "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f"
+  },
+  "WETH": {
+    "chain": "arbitrum",
+    "symbol": "WETH",
+    "decimals": 18,
+    "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1"
+  },
+  "rETH": {
+    "chain": "arbitrum",
+    "address": "0xec70dcb4a1efa46b8f2d97c310c9c4790ba5ffa8",
+    "symbol": "rETH",
+    "decimals": 18
+  },
+  "wstETH": {
+    "chain": "arbitrum",
+    "symbol": "wstETH",
+    "decimals": 18,
+    "address": "0x5979d7b546e38e414f7e9822514be443a4800529"
+  }
+}

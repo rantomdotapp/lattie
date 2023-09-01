@@ -1,0 +1,248 @@
+{
+  "optimism:0x76fb31fb4af56892a25e32cfc43de717950c9278": {
+    "chain": "optimism",
+    "symbol": "AAVE",
+    "decimals": 18,
+    "address": "0x76fb31fb4af56892a25e32cfc43de717950c9278"
+  },
+  "optimism:0xfe8b128ba8c78aabc59d4c64cee7ff28e9379921": {
+    "chain": "optimism",
+    "symbol": "BAL",
+    "decimals": 18,
+    "address": "0xfe8b128ba8c78aabc59d4c64cee7ff28e9379921"
+  },
+  "optimism:0x3e7ef8f50246f725885102e8238cbba33f276747": {
+    "chain": "optimism",
+    "symbol": "BOND",
+    "decimals": 18,
+    "address": "0x3e7ef8f50246f725885102e8238cbba33f276747"
+  },
+  "optimism:0x9c9e5fd8bbc25984b178fdce6117defa39d2db39": {
+    "chain": "optimism",
+    "symbol": "BUSD",
+    "decimals": 18,
+    "address": "0x9c9e5fd8bbc25984b178fdce6117defa39d2db39"
+  },
+  "optimism:0xaddb6a0412de1ba0f936dcaeb8aaa24578dcf3b2": {
+    "chain": "optimism",
+    "symbol": "cbETH",
+    "decimals": 18,
+    "address": "0xaddb6a0412de1ba0f936dcaeb8aaa24578dcf3b2"
+  },
+  "optimism:0x0994206dfe8de6ec6920ff4d779b0d950605fb53": {
+    "chain": "optimism",
+    "symbol": "CRV",
+    "decimals": 18,
+    "address": "0x0994206dfe8de6ec6920ff4d779b0d950605fb53"
+  },
+  "optimism:0xec6adef5e1006bb305bb1975333e8fc4071295bf": {
+    "chain": "optimism",
+    "symbol": "CTSI",
+    "decimals": 18,
+    "address": "0xec6adef5e1006bb305bb1975333e8fc4071295bf"
+  },
+  "optimism:0xda10009cbd5d07dd0cecc66161fc93d7c9000da1": {
+    "chain": "optimism",
+    "symbol": "DAI",
+    "decimals": 18,
+    "address": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1"
+  },
+  "optimism:0x65559aa14915a70190438ef90104769e5e890a00": {
+    "chain": "optimism",
+    "symbol": "ENS",
+    "decimals": 18,
+    "address": "0x65559aa14915a70190438ef90104769e5e890a00"
+  },
+  "optimism:0xd8737ca46aa6285de7b8777a8e3db232911bad41": {
+    "chain": "optimism",
+    "symbol": "FIS",
+    "decimals": 18,
+    "address": "0xd8737ca46aa6285de7b8777a8e3db232911bad41"
+  },
+  "optimism:0xf1a0da3367bc7aa04f8d94ba57b862ff37ced174": {
+    "chain": "optimism",
+    "symbol": "FOX",
+    "decimals": 18,
+    "address": "0xf1a0da3367bc7aa04f8d94ba57b862ff37ced174"
+  },
+  "optimism:0x2e3d870790dc77a83dd1d18184acc7439a53f475": {
+    "chain": "optimism",
+    "symbol": "FRAX",
+    "decimals": 18,
+    "address": "0x2e3d870790dc77a83dd1d18184acc7439a53f475"
+  },
+  "optimism:0x67ccea5bb16181e7b4109c9c2143c24a1c2205be": {
+    "chain": "optimism",
+    "symbol": "FXS",
+    "decimals": 18,
+    "address": "0x67ccea5bb16181e7b4109c9c2143c24a1c2205be"
+  },
+  "optimism:0x1eba7a6a72c894026cd654ac5cdcf83a46445b08": {
+    "chain": "optimism",
+    "symbol": "GTC",
+    "decimals": 18,
+    "address": "0x1eba7a6a72c894026cd654ac5cdcf83a46445b08"
+  },
+  "optimism:0x589d35656641d6ab57a545f08cf473ecd9b6d5f7": {
+    "chain": "optimism",
+    "symbol": "GYEN",
+    "decimals": 6,
+    "address": "0x589d35656641d6ab57a545f08cf473ecd9b6d5f7"
+  },
+  "optimism:0xfdb794692724153d1488ccdbe0c56c252596735f": {
+    "chain": "optimism",
+    "symbol": "LDO",
+    "decimals": 18,
+    "address": "0xfdb794692724153d1488ccdbe0c56c252596735f"
+  },
+  "optimism:0x350a791bfc2c21f9ed5d10980dad2e2638ffa7f6": {
+    "chain": "optimism",
+    "symbol": "LINK",
+    "decimals": 18,
+    "address": "0x350a791bfc2c21f9ed5d10980dad2e2638ffa7f6"
+  },
+  "optimism:0xfeaa9194f9f8c1b65429e31341a103071464907e": {
+    "chain": "optimism",
+    "symbol": "LRC",
+    "decimals": 18,
+    "address": "0xfeaa9194f9f8c1b65429e31341a103071464907e"
+  },
+  "optimism:0xc40f949f8a4e094d1b49a23ea9241d289b7b2819": {
+    "chain": "optimism",
+    "symbol": "LUSD",
+    "decimals": 18,
+    "address": "0xc40f949f8a4e094d1b49a23ea9241d289b7b2819"
+  },
+  "optimism:0x3390108e913824b8ead638444cc52b9abdf63798": {
+    "chain": "optimism",
+    "symbol": "MASK",
+    "decimals": 18,
+    "address": "0x3390108e913824b8ead638444cc52b9abdf63798"
+  },
+  "optimism:0xab7badef82e9fe11f6f33f87bc9bc2aa27f2fcb5": {
+    "chain": "optimism",
+    "symbol": "MKR",
+    "decimals": 18,
+    "address": "0xab7badef82e9fe11f6f33f87bc9bc2aa27f2fcb5"
+  },
+  "optimism:0x4200000000000000000000000000000000000042": {
+    "chain": "optimism",
+    "symbol": "OP",
+    "decimals": 18,
+    "address": "0x4200000000000000000000000000000000000042"
+  },
+  "optimism:0xc1c167cc44f7923cd0062c4370df962f9ddb16f5": {
+    "chain": "optimism",
+    "symbol": "PEPE",
+    "decimals": 18,
+    "address": "0xc1c167cc44f7923cd0062c4370df962f9ddb16f5"
+  },
+  "optimism:0x9e1028f5f1d5ede59748ffcee5532509976840e0": {
+    "chain": "optimism",
+    "symbol": "PERP",
+    "decimals": 18,
+    "address": "0x9e1028f5f1d5ede59748ffcee5532509976840e0"
+  },
+  "optimism:0x7fb688ccf682d58f86d7e38e03f9d22e7705448b": {
+    "chain": "optimism",
+    "symbol": "RAI",
+    "decimals": 18,
+    "address": "0x7fb688ccf682d58f86d7e38e03f9d22e7705448b"
+  },
+  "optimism:0xb548f63d4405466b36c0c0ac3318a22fdcec711a": {
+    "chain": "optimism",
+    "symbol": "RGT",
+    "decimals": 18,
+    "address": "0xb548f63d4405466b36c0c0ac3318a22fdcec711a"
+  },
+  "optimism:0x8700daec35af8ff88c16bdf0418774cb3d7599b4": {
+    "chain": "optimism",
+    "symbol": "SNX",
+    "decimals": 18,
+    "address": "0x8700daec35af8ff88c16bdf0418774cb3d7599b4"
+  },
+  "optimism:0xba1cf949c382a32a09a17b2adf3587fc7fa664f1": {
+    "chain": "optimism",
+    "symbol": "SOL",
+    "decimals": 9,
+    "address": "0xba1cf949c382a32a09a17b2adf3587fc7fa664f1"
+  },
+  "optimism:0xef6301da234fc7b0545c6e877d3359fe0b9e50a4": {
+    "chain": "optimism",
+    "symbol": "SUKU",
+    "decimals": 18,
+    "address": "0xef6301da234fc7b0545c6e877d3359fe0b9e50a4"
+  },
+  "optimism:0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9": {
+    "chain": "optimism",
+    "symbol": "sUSD",
+    "decimals": 18,
+    "address": "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9"
+  },
+  "optimism:0x3eaeb77b03dbc0f6321ae1b72b2e9adb0f60112b": {
+    "chain": "optimism",
+    "symbol": "SUSHI",
+    "decimals": 18,
+    "address": "0x3eaeb77b03dbc0f6321ae1b72b2e9adb0f60112b"
+  },
+  "optimism:0x747e42eb0591547a0ab429b3627816208c734ea7": {
+    "chain": "optimism",
+    "symbol": "T",
+    "decimals": 18,
+    "address": "0x747e42eb0591547a0ab429b3627816208c734ea7"
+  },
+  "optimism:0xaf8ca653fa2772d58f4368b0a71980e9e3ceb888": {
+    "chain": "optimism",
+    "symbol": "TRB",
+    "decimals": 18,
+    "address": "0xaf8ca653fa2772d58f4368b0a71980e9e3ceb888"
+  },
+  "optimism:0xe7798f023fc62146e8aa1b36da45fb70855a77ea": {
+    "chain": "optimism",
+    "symbol": "UMA",
+    "decimals": 18,
+    "address": "0xe7798f023fc62146e8aa1b36da45fb70855a77ea"
+  },
+  "optimism:0x6fd9d7ad17242c41f7131d257212c54a0e816691": {
+    "chain": "optimism",
+    "symbol": "UNI",
+    "decimals": 18,
+    "address": "0x6fd9d7ad17242c41f7131d257212c54a0e816691"
+  },
+  "optimism:0x7f5c764cbc14f9669b88837ca1490cca17c31607": {
+    "chain": "optimism",
+    "symbol": "USDC",
+    "decimals": 6,
+    "address": "0x7f5c764cbc14f9669b88837ca1490cca17c31607"
+  },
+  "optimism:0x94b008aa00579c1307b0ef2c499ad98a8ce58e58": {
+    "chain": "optimism",
+    "symbol": "USDT",
+    "decimals": 6,
+    "address": "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58"
+  },
+  "optimism:0x68f180fcce6836688e9084f035309e29bf0a2095": {
+    "chain": "optimism",
+    "symbol": "WBTC",
+    "decimals": 8,
+    "address": "0x68f180fcce6836688e9084f035309e29bf0a2095"
+  },
+  "optimism:0x4200000000000000000000000000000000000006": {
+    "chain": "optimism",
+    "symbol": "WETH",
+    "decimals": 18,
+    "address": "0x4200000000000000000000000000000000000006"
+  },
+  "optimism:0x871f2f2ff935fd1ed867842ff2a7bfd051a5e527": {
+    "chain": "optimism",
+    "symbol": "WOO",
+    "decimals": 18,
+    "address": "0x871f2f2ff935fd1ed867842ff2a7bfd051a5e527"
+  },
+  "optimism:0xd1917629b3e6a72e6772aab5dbe58eb7fa3c2f33": {
+    "chain": "optimism",
+    "symbol": "ZRX",
+    "decimals": 18,
+    "address": "0xd1917629b3e6a72e6772aab5dbe58eb7fa3c2f33"
+  }
+}

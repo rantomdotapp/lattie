@@ -1,0 +1,1016 @@
+{
+  "polygon:0x9c2c5fd7b07e95ee044ddeba0e97a665f142394f": {
+    "chain": "polygon",
+    "symbol": "1INCH",
+    "decimals": 18,
+    "address": "0x9c2c5fd7b07e95ee044ddeba0e97a665f142394f"
+  },
+  "polygon:0xd6df932a45c0f255f85145f286ea0b292b21c90b": {
+    "chain": "polygon",
+    "symbol": "AAVE",
+    "decimals": 18,
+    "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b"
+  },
+  "polygon:0xdda7b23d2d72746663e7939743f929a3d85fc975": {
+    "chain": "polygon",
+    "symbol": "ADX",
+    "decimals": 18,
+    "address": "0xdda7b23d2d72746663e7939743f929a3d85fc975"
+  },
+  "polygon:0x6a6bd53d677f8632631662c48bd47b1d4d6524ee": {
+    "chain": "polygon",
+    "symbol": "AGLD",
+    "decimals": 18,
+    "address": "0x6a6bd53d677f8632631662c48bd47b1d4d6524ee"
+  },
+  "polygon:0xe2341718c6c0cbfa8e6686102dd8fbf4047a9e9b": {
+    "chain": "polygon",
+    "symbol": "AIOZ",
+    "decimals": 18,
+    "address": "0xe2341718c6c0cbfa8e6686102dd8fbf4047a9e9b"
+  },
+  "polygon:0x95c300e7740d2a88a44124b424bfc1cb2f9c3b89": {
+    "chain": "polygon",
+    "symbol": "ALCX",
+    "decimals": 18,
+    "address": "0x95c300e7740d2a88a44124b424bfc1cb2f9c3b89"
+  },
+  "polygon:0x82dcf1df86ada26b2dcd9ba6334cedb8c2448e9e": {
+    "chain": "polygon",
+    "symbol": "ALEPH",
+    "decimals": 18,
+    "address": "0x82dcf1df86ada26b2dcd9ba6334cedb8c2448e9e"
+  },
+  "polygon:0xbfc70507384047aa74c29cdc8c5cb88d0f7213ac": {
+    "chain": "polygon",
+    "symbol": "ALI",
+    "decimals": 18,
+    "address": "0xbfc70507384047aa74c29cdc8c5cb88d0f7213ac"
+  },
+  "polygon:0x50858d870faf55da2fd90fb6df7c34b5648305c6": {
+    "chain": "polygon",
+    "symbol": "ALICE",
+    "decimals": 6,
+    "address": "0x50858d870faf55da2fd90fb6df7c34b5648305c6"
+  },
+  "polygon:0x3ae490db48d74b1bc626400135d4616377d0109f": {
+    "chain": "polygon",
+    "symbol": "ALPHA",
+    "decimals": 18,
+    "address": "0x3ae490db48d74b1bc626400135d4616377d0109f"
+  },
+  "polygon:0x0621d647cecbfb64b79e44302c1933cb4f27054d": {
+    "chain": "polygon",
+    "symbol": "AMP",
+    "decimals": 18,
+    "address": "0x0621d647cecbfb64b79e44302c1933cb4f27054d"
+  },
+  "polygon:0x101a023270368c0d50bffb62780f4afd4ea79c35": {
+    "chain": "polygon",
+    "symbol": "ANKR",
+    "decimals": 18,
+    "address": "0x101a023270368c0d50bffb62780f4afd4ea79c35"
+  },
+  "polygon:0x2b8504ab5efc246d0ec5ec7e74565683227497de": {
+    "chain": "polygon",
+    "symbol": "ANT",
+    "decimals": 18,
+    "address": "0x2b8504ab5efc246d0ec5ec7e74565683227497de"
+  },
+  "polygon:0xb7b31a6bc18e48888545ce79e83e06003be70930": {
+    "chain": "polygon",
+    "symbol": "APE",
+    "decimals": 18,
+    "address": "0xb7b31a6bc18e48888545ce79e83e06003be70930"
+  },
+  "polygon:0x45c27821e80f8789b60fd8b600c73815d34dda6c": {
+    "chain": "polygon",
+    "symbol": "API3",
+    "decimals": 18,
+    "address": "0x45c27821e80f8789b60fd8b600c73815d34dda6c"
+  },
+  "polygon:0xee800b277a96b0f490a1a732e1d6395fad960a26": {
+    "chain": "polygon",
+    "symbol": "ARPA",
+    "decimals": 18,
+    "address": "0xee800b277a96b0f490a1a732e1d6395fad960a26"
+  },
+  "polygon:0x04bea9fce76943e90520489ccab84e84c0198e29": {
+    "chain": "polygon",
+    "symbol": "AST",
+    "decimals": 4,
+    "address": "0x04bea9fce76943e90520489ccab84e84c0198e29"
+  },
+  "polygon:0x0df0f72ee0e5c9b7ca761ecec42754992b2da5bf": {
+    "chain": "polygon",
+    "symbol": "ATA",
+    "decimals": 18,
+    "address": "0x0df0f72ee0e5c9b7ca761ecec42754992b2da5bf"
+  },
+  "polygon:0x5eb8d998371971d01954205c7afe90a7af6a95ac": {
+    "chain": "polygon",
+    "symbol": "AUDIO",
+    "decimals": 18,
+    "address": "0x5eb8d998371971d01954205c7afe90a7af6a95ac"
+  },
+  "polygon:0x61bdd9c7d4df4bf47a4508c0c8245505f2af5b7b": {
+    "chain": "polygon",
+    "symbol": "AXS",
+    "decimals": 18,
+    "address": "0x61bdd9c7d4df4bf47a4508c0c8245505f2af5b7b"
+  },
+  "polygon:0x1fcbe5937b0cc2adf69772d228fa4205acf4d9b2": {
+    "chain": "polygon",
+    "symbol": "BADGER",
+    "decimals": 18,
+    "address": "0x1fcbe5937b0cc2adf69772d228fa4205acf4d9b2"
+  },
+  "polygon:0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3": {
+    "chain": "polygon",
+    "symbol": "BAL",
+    "decimals": 18,
+    "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3"
+  },
+  "polygon:0xa8b1e0764f85f53dfe21760e8afe5446d82606ac": {
+    "chain": "polygon",
+    "symbol": "BAND",
+    "decimals": 18,
+    "address": "0xa8b1e0764f85f53dfe21760e8afe5446d82606ac"
+  },
+  "polygon:0x3cef98bb43d732e2f285ee605a8158cde967d219": {
+    "chain": "polygon",
+    "symbol": "BAT",
+    "decimals": 18,
+    "address": "0x3cef98bb43d732e2f285ee605a8158cde967d219"
+  },
+  "polygon:0x91c89a94567980f0e9723b487b0bed586ee96aa7": {
+    "chain": "polygon",
+    "symbol": "BICO",
+    "decimals": 18,
+    "address": "0x91c89a94567980f0e9723b487b0bed586ee96aa7"
+  },
+  "polygon:0x438b28c5aa5f00a817b7def7ce2fb3d5d1970974": {
+    "chain": "polygon",
+    "symbol": "BLZ",
+    "decimals": 18,
+    "address": "0x438b28c5aa5f00a817b7def7ce2fb3d5d1970974"
+  },
+  "polygon:0xc26d47d5c33ac71ac5cf9f776d63ba292a4f7842": {
+    "chain": "polygon",
+    "symbol": "BNT",
+    "decimals": 18,
+    "address": "0xc26d47d5c33ac71ac5cf9f776d63ba292a4f7842"
+  },
+  "polygon:0xa4b2b20b2c73c7046ed19ac6bff5e5285c58f20a": {
+    "chain": "polygon",
+    "symbol": "BOBA",
+    "decimals": 18,
+    "address": "0xa4b2b20b2c73c7046ed19ac6bff5e5285c58f20a"
+  },
+  "polygon:0xa041544fe2be56cce31ebb69102b965e06aace80": {
+    "chain": "polygon",
+    "symbol": "BOND",
+    "decimals": 18,
+    "address": "0xa041544fe2be56cce31ebb69102b965e06aace80"
+  },
+  "polygon:0xdab529f40e671a1d4bf91361c21bf9f0c9712ab7": {
+    "chain": "polygon",
+    "symbol": "BUSD",
+    "decimals": 18,
+    "address": "0xdab529f40e671a1d4bf91361c21bf9f0c9712ab7"
+  },
+  "polygon:0x91a4635f620766145c099e15889bd2766906a559": {
+    "chain": "polygon",
+    "symbol": "CELR",
+    "decimals": 18,
+    "address": "0x91a4635f620766145c099e15889bd2766906a559"
+  },
+  "polygon:0x594c984e3318e91313f881b021a0c4203ff5e59f": {
+    "chain": "polygon",
+    "symbol": "CHR",
+    "decimals": 6,
+    "address": "0x594c984e3318e91313f881b021a0c4203ff5e59f"
+  },
+  "polygon:0xf1938ce12400f9a761084e7a80d37e732a4da056": {
+    "chain": "polygon",
+    "symbol": "CHZ",
+    "decimals": 18,
+    "address": "0xf1938ce12400f9a761084e7a80d37e732a4da056"
+  },
+  "polygon:0x8505b9d2254a7ae468c0e9dd10ccea3a837aef5c": {
+    "chain": "polygon",
+    "symbol": "COMP",
+    "decimals": 18,
+    "address": "0x8505b9d2254a7ae468c0e9dd10ccea3a837aef5c"
+  },
+  "polygon:0x93b0ff1c8828f6eb039d345ff681ed735086d925": {
+    "chain": "polygon",
+    "symbol": "CQT",
+    "decimals": 18,
+    "address": "0x93b0ff1c8828f6eb039d345ff681ed735086d925"
+  },
+  "polygon:0xada58df0f643d959c2a47c9d4d4c1a4defe3f11c": {
+    "chain": "polygon",
+    "symbol": "CRO",
+    "decimals": 8,
+    "address": "0xada58df0f643d959c2a47c9d4d4c1a4defe3f11c"
+  },
+  "polygon:0x172370d5cd63279efa6d502dab29171933a610af": {
+    "chain": "polygon",
+    "symbol": "CRV",
+    "decimals": 18,
+    "address": "0x172370d5cd63279efa6d502dab29171933a610af"
+  },
+  "polygon:0x2727ab1c2d22170abc9b595177b2d5c6e1ab7b7b": {
+    "chain": "polygon",
+    "symbol": "CTSI",
+    "decimals": 18,
+    "address": "0x2727ab1c2d22170abc9b595177b2d5c6e1ab7b7b"
+  },
+  "polygon:0x8c208bc2a808a088a78398fed8f2640cab0b6edb": {
+    "chain": "polygon",
+    "symbol": "CTX",
+    "decimals": 18,
+    "address": "0x8c208bc2a808a088a78398fed8f2640cab0b6edb"
+  },
+  "polygon:0x276c9cbaa4bdf57d7109a41e67bd09699536fa3d": {
+    "chain": "polygon",
+    "symbol": "CUBE",
+    "decimals": 8,
+    "address": "0x276c9cbaa4bdf57d7109a41e67bd09699536fa3d"
+  },
+  "polygon:0x66dc5a08091d1968e08c16aa5b27bac8398b02be": {
+    "chain": "polygon",
+    "symbol": "CVC",
+    "decimals": 8,
+    "address": "0x66dc5a08091d1968e08c16aa5b27bac8398b02be"
+  },
+  "polygon:0x4257ea7637c355f81616050cbb6a9b709fd72683": {
+    "chain": "polygon",
+    "symbol": "CVX",
+    "decimals": 18,
+    "address": "0x4257ea7637c355f81616050cbb6a9b709fd72683"
+  },
+  "polygon:0x8f3cf7ad23cd3cadbd9735aff958023239c6a063": {
+    "chain": "polygon",
+    "symbol": "DAI",
+    "decimals": 18,
+    "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063"
+  },
+  "polygon:0x26f5fb1e6c8a65b3a873ff0a213fa16eff5a7828": {
+    "chain": "polygon",
+    "symbol": "DDX",
+    "decimals": 18,
+    "address": "0x26f5fb1e6c8a65b3a873ff0a213fa16eff5a7828"
+  },
+  "polygon:0xff835562c761205659939b64583dd381a6aa4d92": {
+    "chain": "polygon",
+    "symbol": "DEXT",
+    "decimals": 18,
+    "address": "0xff835562c761205659939b64583dd381a6aa4d92"
+  },
+  "polygon:0x993f2cafe9dbe525243f4a78bebc69dac8d36000": {
+    "chain": "polygon",
+    "symbol": "DIA",
+    "decimals": 18,
+    "address": "0x993f2cafe9dbe525243f4a78bebc69dac8d36000"
+  },
+  "polygon:0x85955046df4668e1dd369d2de9f3aeb98dd2a369": {
+    "chain": "polygon",
+    "symbol": "DPI",
+    "decimals": 18,
+    "address": "0x85955046df4668e1dd369d2de9f3aeb98dd2a369"
+  },
+  "polygon:0x4c3bf0a3de9524af68327d1d2558a3b70d17d42a": {
+    "chain": "polygon",
+    "symbol": "DYDX",
+    "decimals": 18,
+    "address": "0x4c3bf0a3de9524af68327d1d2558a3b70d17d42a"
+  },
+  "polygon:0xe0339c80ffde91f3e20494df88d4206d86024cdf": {
+    "chain": "polygon",
+    "symbol": "ELON",
+    "decimals": 18,
+    "address": "0xe0339c80ffde91f3e20494df88d4206d86024cdf"
+  },
+  "polygon:0x7ec26842f195c852fa843bb9f6d8b583a274a157": {
+    "chain": "polygon",
+    "symbol": "ENJ",
+    "decimals": 18,
+    "address": "0x7ec26842f195c852fa843bb9f6d8b583a274a157"
+  },
+  "polygon:0xbd7a5cf51d22930b8b3df6d834f9bcef90ee7c4f": {
+    "chain": "polygon",
+    "symbol": "ENS",
+    "decimals": 18,
+    "address": "0xbd7a5cf51d22930b8b3df6d834f9bcef90ee7c4f"
+  },
+  "polygon:0x0e50bea95fe001a370a4f1c220c49aedcb982dec": {
+    "chain": "polygon",
+    "symbol": "ERN",
+    "decimals": 18,
+    "address": "0x0e50bea95fe001a370a4f1c220c49aedcb982dec"
+  },
+  "polygon:0x8a037dbca8134ffc72c362e394e35e0cad618f85": {
+    "chain": "polygon",
+    "symbol": "EUROC",
+    "decimals": 6,
+    "address": "0x8a037dbca8134ffc72c362e394e35e0cad618f85"
+  },
+  "polygon:0x176f5ab638cf4ff3b6239ba609c3fadaa46ef5b0": {
+    "chain": "polygon",
+    "symbol": "FARM",
+    "decimals": 18,
+    "address": "0x176f5ab638cf4ff3b6239ba609c3fadaa46ef5b0"
+  },
+  "polygon:0x7583feddbcefa813dc18259940f76a02710a8905": {
+    "chain": "polygon",
+    "symbol": "FET",
+    "decimals": 18,
+    "address": "0x7583feddbcefa813dc18259940f76a02710a8905"
+  },
+  "polygon:0x7a7b94f18ef6ad056cda648588181cda84800f94": {
+    "chain": "polygon",
+    "symbol": "FIS",
+    "decimals": 18,
+    "address": "0x7a7b94f18ef6ad056cda648588181cda84800f94"
+  },
+  "polygon:0x9ff62d1fc52a907b6dcba8077c2ddca6e6a9d3e1": {
+    "chain": "polygon",
+    "symbol": "FORT",
+    "decimals": 18,
+    "address": "0x9ff62d1fc52a907b6dcba8077c2ddca6e6a9d3e1"
+  },
+  "polygon:0x5ecba59dacc1adc5bdea35f38a732823fc3de977": {
+    "chain": "polygon",
+    "symbol": "FORTH",
+    "decimals": 18,
+    "address": "0x5ecba59dacc1adc5bdea35f38a732823fc3de977"
+  },
+  "polygon:0x65a05db8322701724c197af82c9cae41195b0aa8": {
+    "chain": "polygon",
+    "symbol": "FOX",
+    "decimals": 18,
+    "address": "0x65a05db8322701724c197af82c9cae41195b0aa8"
+  },
+  "polygon:0x104592a158490a9228070e0a8e5343b499e125d0": {
+    "chain": "polygon",
+    "symbol": "FRAX",
+    "decimals": 18,
+    "address": "0x104592a158490a9228070e0a8e5343b499e125d0"
+  },
+  "polygon:0xc9c1c1c20b3658f8787cc2fd702267791f224ce1": {
+    "chain": "polygon",
+    "symbol": "FTM",
+    "decimals": 18,
+    "address": "0xc9c1c1c20b3658f8787cc2fd702267791f224ce1"
+  },
+  "polygon:0x3e121107f6f22da4911079845a470757af4e1a1b": {
+    "chain": "polygon",
+    "symbol": "FXS",
+    "decimals": 18,
+    "address": "0x3e121107f6f22da4911079845a470757af4e1a1b"
+  },
+  "polygon:0x09e1943dd2a4e82032773594f50cf54453000b97": {
+    "chain": "polygon",
+    "symbol": "GALA",
+    "decimals": 8,
+    "address": "0x09e1943dd2a4e82032773594f50cf54453000b97"
+  },
+  "polygon:0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7": {
+    "chain": "polygon",
+    "symbol": "GHST",
+    "decimals": 18,
+    "address": "0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7"
+  },
+  "polygon:0x0b220b82f3ea3b7f6d9a1d8ab58930c064a2b5bf": {
+    "chain": "polygon",
+    "symbol": "GLM",
+    "decimals": 18,
+    "address": "0x0b220b82f3ea3b7f6d9a1d8ab58930c064a2b5bf"
+  },
+  "polygon:0x5ffd62d3c3ee2e81c00a7b9079fb248e7df024a8": {
+    "chain": "polygon",
+    "symbol": "GNO",
+    "decimals": 18,
+    "address": "0x5ffd62d3c3ee2e81c00a7b9079fb248e7df024a8"
+  },
+  "polygon:0xf88fc6b493eda7650e4bcf7a290e8d108f677cfe": {
+    "chain": "polygon",
+    "symbol": "GODS",
+    "decimals": 18,
+    "address": "0xf88fc6b493eda7650e4bcf7a290e8d108f677cfe"
+  },
+  "polygon:0x5fe2b58c013d7601147dcdd68c143a77499f5531": {
+    "chain": "polygon",
+    "symbol": "GRT",
+    "decimals": 18,
+    "address": "0x5fe2b58c013d7601147dcdd68c143a77499f5531"
+  },
+  "polygon:0xdb95f9188479575f3f718a245eca1b3bf74567ec": {
+    "chain": "polygon",
+    "symbol": "GTC",
+    "decimals": 18,
+    "address": "0xdb95f9188479575f3f718a245eca1b3bf74567ec"
+  },
+  "polygon:0xc8a94a3d3d2dabc3c1caffffdca6a7543c3e3e65": {
+    "chain": "polygon",
+    "symbol": "GUSD",
+    "decimals": 2,
+    "address": "0xc8a94a3d3d2dabc3c1caffffdca6a7543c3e3e65"
+  },
+  "polygon:0x482bc619ee7662759cdc0685b4e78f464da39c73": {
+    "chain": "polygon",
+    "symbol": "GYEN",
+    "decimals": 6,
+    "address": "0x482bc619ee7662759cdc0685b4e78f464da39c73"
+  },
+  "polygon:0x6ccbf3627b2c83afef05bf2f035e7f7b210fe30d": {
+    "chain": "polygon",
+    "symbol": "HOPR",
+    "decimals": 18,
+    "address": "0x6ccbf3627b2c83afef05bf2f035e7f7b210fe30d"
+  },
+  "polygon:0x9cb74c8032b007466865f060ad2c46145d45553d": {
+    "chain": "polygon",
+    "symbol": "IDEX",
+    "decimals": 18,
+    "address": "0x9cb74c8032b007466865f060ad2c46145d45553d"
+  },
+  "polygon:0xfa46daf9909e116dbc40fe1cc95fc0bb1f452abe": {
+    "chain": "polygon",
+    "symbol": "ILV",
+    "decimals": 18,
+    "address": "0xfa46daf9909e116dbc40fe1cc95fc0bb1f452abe"
+  },
+  "polygon:0x183070c90b34a63292cc908ce1b263cb56d49a7f": {
+    "chain": "polygon",
+    "symbol": "IMX",
+    "decimals": 18,
+    "address": "0x183070c90b34a63292cc908ce1b263cb56d49a7f"
+  },
+  "polygon:0xfbd8a3b908e764dbcd51e27992464b4432a1132b": {
+    "chain": "polygon",
+    "symbol": "INDEX",
+    "decimals": 18,
+    "address": "0xfbd8a3b908e764dbcd51e27992464b4432a1132b"
+  },
+  "polygon:0x4e8dc2149eac3f3def36b1c281ea466338249371": {
+    "chain": "polygon",
+    "symbol": "INJ",
+    "decimals": 18,
+    "address": "0x4e8dc2149eac3f3def36b1c281ea466338249371"
+  },
+  "polygon:0xf18ac368001b0ddc80aa6a8374deb49e868efdb8": {
+    "chain": "polygon",
+    "symbol": "INV",
+    "decimals": 18,
+    "address": "0xf18ac368001b0ddc80aa6a8374deb49e868efdb8"
+  },
+  "polygon:0xf6372cdb9c1d3674e83842e3800f2a62ac9f3c66": {
+    "chain": "polygon",
+    "symbol": "IOTX",
+    "decimals": 18,
+    "address": "0xf6372cdb9c1d3674e83842e3800f2a62ac9f3c66"
+  },
+  "polygon:0xb87f5c1e81077ffcfe821da240fd20c99c533af1": {
+    "chain": "polygon",
+    "symbol": "JASMY",
+    "decimals": 18,
+    "address": "0xb87f5c1e81077ffcfe821da240fd20c99c533af1"
+  },
+  "polygon:0x42f37a1296b2981f7c3caced84c5096b2eb0c72c": {
+    "chain": "polygon",
+    "symbol": "KEEP",
+    "decimals": 18,
+    "address": "0x42f37a1296b2981f7c3caced84c5096b2eb0c72c"
+  },
+  "polygon:0x324b28d6565f784d596422b0f2e5ab6e9cfa1dc7": {
+    "chain": "polygon",
+    "symbol": "KNC",
+    "decimals": 18,
+    "address": "0x324b28d6565f784d596422b0f2e5ab6e9cfa1dc7"
+  },
+  "polygon:0x53aec293212e3b792563bc16f1be26956adb12e9": {
+    "chain": "polygon",
+    "symbol": "KP3R",
+    "decimals": 18,
+    "address": "0x53aec293212e3b792563bc16f1be26956adb12e9"
+  },
+  "polygon:0xe8a51d0dd1b4525189dda2187f90ddf0932b5482": {
+    "chain": "polygon",
+    "symbol": "LCX",
+    "decimals": 18,
+    "address": "0xe8a51d0dd1b4525189dda2187f90ddf0932b5482"
+  },
+  "polygon:0xc3c7d422809852031b44ab29eec9f1eff2a58756": {
+    "chain": "polygon",
+    "symbol": "LDO",
+    "decimals": 18,
+    "address": "0xc3c7d422809852031b44ab29eec9f1eff2a58756"
+  },
+  "polygon:0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39": {
+    "chain": "polygon",
+    "symbol": "LINK",
+    "decimals": 18,
+    "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39"
+  },
+  "polygon:0x465b67cb20a7e8bc4c51b4c7da591c1945b41427": {
+    "chain": "polygon",
+    "symbol": "LOKA",
+    "decimals": 18,
+    "address": "0x465b67cb20a7e8bc4c51b4c7da591c1945b41427"
+  },
+  "polygon:0x66efb7cc647e0efab02eba4316a2d2941193f6b3": {
+    "chain": "polygon",
+    "symbol": "LOOM",
+    "decimals": 18,
+    "address": "0x66efb7cc647e0efab02eba4316a2d2941193f6b3"
+  },
+  "polygon:0x3962f4a0a0051dcce0be73a7e09cef5756736712": {
+    "chain": "polygon",
+    "symbol": "LPT",
+    "decimals": 18,
+    "address": "0x3962f4a0a0051dcce0be73a7e09cef5756736712"
+  },
+  "polygon:0x8ab2fec94d17ae69fb90e7c773f2c85ed1802c01": {
+    "chain": "polygon",
+    "symbol": "LQTY",
+    "decimals": 18,
+    "address": "0x8ab2fec94d17ae69fb90e7c773f2c85ed1802c01"
+  },
+  "polygon:0x84e1670f61347cdaed56dcc736fb990fbb47ddc1": {
+    "chain": "polygon",
+    "symbol": "LRC",
+    "decimals": 18,
+    "address": "0x84e1670f61347cdaed56dcc736fb990fbb47ddc1"
+  },
+  "polygon:0x23001f892c0c82b79303edc9b9033cd190bb21c7": {
+    "chain": "polygon",
+    "symbol": "LUSD",
+    "decimals": 18,
+    "address": "0x23001f892c0c82b79303edc9b9033cd190bb21c7"
+  },
+  "polygon:0xa1c57f48f0deb89f569dfbe6e2b7f46d33606fd4": {
+    "chain": "polygon",
+    "symbol": "MANA",
+    "decimals": 18,
+    "address": "0xa1c57f48f0deb89f569dfbe6e2b7f46d33606fd4"
+  },
+  "polygon:0x2b9e7ccdf0f4e5b24757c1e1a80e311e34cb10c7": {
+    "chain": "polygon",
+    "symbol": "MASK",
+    "decimals": 18,
+    "address": "0x2b9e7ccdf0f4e5b24757c1e1a80e311e34cb10c7"
+  },
+  "polygon:0x347accafda7f8c5bdec57fa34a5b663cbd1aeca7": {
+    "chain": "polygon",
+    "symbol": "MATH",
+    "decimals": 18,
+    "address": "0x347accafda7f8c5bdec57fa34a5b663cbd1aeca7"
+  },
+  "polygon:0x0000000000000000000000000000000000001010": {
+    "chain": "polygon",
+    "symbol": "MATIC",
+    "decimals": 18,
+    "address": "0x0000000000000000000000000000000000001010"
+  },
+  "polygon:0xaa7dbd1598251f856c12f63557a4c4397c253cea": {
+    "chain": "polygon",
+    "symbol": "MCO2",
+    "decimals": 18,
+    "address": "0xaa7dbd1598251f856c12f63557a4c4397c253cea"
+  },
+  "polygon:0x1b9d40715e757bdb9bdec3215b898e46d8a3b71a": {
+    "chain": "polygon",
+    "symbol": "METIS",
+    "decimals": 18,
+    "address": "0x1b9d40715e757bdb9bdec3215b898e46d8a3b71a"
+  },
+  "polygon:0x01288e04435bfcd4718ff203d6ed18146c17cd4b": {
+    "chain": "polygon",
+    "symbol": "MIM",
+    "decimals": 18,
+    "address": "0x01288e04435bfcd4718ff203d6ed18146c17cd4b"
+  },
+  "polygon:0x1c5ccca2cb59145a4b25f452660cba6436ddce9b": {
+    "chain": "polygon",
+    "symbol": "MIR",
+    "decimals": 18,
+    "address": "0x1c5ccca2cb59145a4b25f452660cba6436ddce9b"
+  },
+  "polygon:0x6f7c932e7684666c9fd1d44527765433e01ff61d": {
+    "chain": "polygon",
+    "symbol": "MKR",
+    "decimals": 18,
+    "address": "0x6f7c932e7684666c9fd1d44527765433e01ff61d"
+  },
+  "polygon:0xa9f37d84c856fda3812ad0519dad44fa0a3fe207": {
+    "chain": "polygon",
+    "symbol": "MLN",
+    "decimals": 18,
+    "address": "0xa9f37d84c856fda3812ad0519dad44fa0a3fe207"
+  },
+  "polygon:0x6968105460f67c3bf751be7c15f92f5286fd0ce5": {
+    "chain": "polygon",
+    "symbol": "MONA",
+    "decimals": 18,
+    "address": "0x6968105460f67c3bf751be7c15f92f5286fd0ce5"
+  },
+  "polygon:0xa3c322ad15218fbfaed26ba7f616249f7705d945": {
+    "chain": "polygon",
+    "symbol": "MV",
+    "decimals": 18,
+    "address": "0xa3c322ad15218fbfaed26ba7f616249f7705d945"
+  },
+  "polygon:0x4985e0b13554fb521840e893574d3848c10fcc6f": {
+    "chain": "polygon",
+    "symbol": "NCT",
+    "decimals": 18,
+    "address": "0x4985e0b13554fb521840e893574d3848c10fcc6f"
+  },
+  "polygon:0x0bf519071b02f22c17e7ed5f4002ee1911f46729": {
+    "chain": "polygon",
+    "symbol": "NMR",
+    "decimals": 18,
+    "address": "0x0bf519071b02f22c17e7ed5f4002ee1911f46729"
+  },
+  "polygon:0x282d8efce846a88b159800bd4130ad77443fa1a1": {
+    "chain": "polygon",
+    "symbol": "OCEAN",
+    "decimals": 18,
+    "address": "0x282d8efce846a88b159800bd4130ad77443fa1a1"
+  },
+  "polygon:0xa63beffd33ab3a2efd92a39a7d2361cee14ceba8": {
+    "chain": "polygon",
+    "symbol": "OGN",
+    "decimals": 18,
+    "address": "0xa63beffd33ab3a2efd92a39a7d2361cee14ceba8"
+  },
+  "polygon:0x62414d03084eeb269e18c970a21f45d2967f0170": {
+    "chain": "polygon",
+    "symbol": "OMG",
+    "decimals": 18,
+    "address": "0x62414d03084eeb269e18c970a21f45d2967f0170"
+  },
+  "polygon:0x0ee392ba5ef1354c9bd75a98044667d307c0e773": {
+    "chain": "polygon",
+    "symbol": "ORN",
+    "decimals": 8,
+    "address": "0x0ee392ba5ef1354c9bd75a98044667d307c0e773"
+  },
+  "polygon:0x9880e3dda13c8e7d4804691a45160102d31f6060": {
+    "chain": "polygon",
+    "symbol": "OXT",
+    "decimals": 18,
+    "address": "0x9880e3dda13c8e7d4804691a45160102d31f6060"
+  },
+  "polygon:0x553d3d295e0f695b9228246232edf400ed3560b5": {
+    "chain": "polygon",
+    "symbol": "PAXG",
+    "decimals": 18,
+    "address": "0x553d3d295e0f695b9228246232edf400ed3560b5"
+  },
+  "polygon:0x263534a4fe3cb249df46810718b7b612a30ebbff": {
+    "chain": "polygon",
+    "symbol": "PERP",
+    "decimals": 18,
+    "address": "0x263534a4fe3cb249df46810718b7b612a30ebbff"
+  },
+  "polygon:0x8765f05adce126d70bcdf1b0a48db573316662eb": {
+    "chain": "polygon",
+    "symbol": "PLA",
+    "decimals": 18,
+    "address": "0x8765f05adce126d70bcdf1b0a48db573316662eb"
+  },
+  "polygon:0x7dc0cb65ec6019330a6841e9c274f2ee57a6ca6c": {
+    "chain": "polygon",
+    "symbol": "PLU",
+    "decimals": 18,
+    "address": "0x7dc0cb65ec6019330a6841e9c274f2ee57a6ca6c"
+  },
+  "polygon:0x8dc302e2141da59c934d900886dbf1518fd92cd4": {
+    "chain": "polygon",
+    "symbol": "POLS",
+    "decimals": 18,
+    "address": "0x8dc302e2141da59c934d900886dbf1518fd92cd4"
+  },
+  "polygon:0xcb059c5573646047d6d88dddb87b745c18161d3b": {
+    "chain": "polygon",
+    "symbol": "POLY",
+    "decimals": 18,
+    "address": "0xcb059c5573646047d6d88dddb87b745c18161d3b"
+  },
+  "polygon:0x73580a2416a57f1c4b6391dba688a9e4f7dbece0": {
+    "chain": "polygon",
+    "symbol": "POND",
+    "decimals": 18,
+    "address": "0x73580a2416a57f1c4b6391dba688a9e4f7dbece0"
+  },
+  "polygon:0x0aab8dc887d34f00d50e19aee48371a941390d14": {
+    "chain": "polygon",
+    "symbol": "POWR",
+    "decimals": 6,
+    "address": "0x0aab8dc887d34f00d50e19aee48371a941390d14"
+  },
+  "polygon:0x82ffdfd1d8699e8886a4e77cefa9dd9710a7fefd": {
+    "chain": "polygon",
+    "symbol": "PRO",
+    "decimals": 8,
+    "address": "0x82ffdfd1d8699e8886a4e77cefa9dd9710a7fefd"
+  },
+  "polygon:0x9377eeb7419486fd4d485671d50baa4bf77c2222": {
+    "chain": "polygon",
+    "symbol": "PRQ",
+    "decimals": 18,
+    "address": "0x9377eeb7419486fd4d485671d50baa4bf77c2222"
+  },
+  "polygon:0x36b77a184be8ee56f5e81c56727b20647a42e28e": {
+    "chain": "polygon",
+    "symbol": "QNT",
+    "decimals": 18,
+    "address": "0x36b77a184be8ee56f5e81c56727b20647a42e28e"
+  },
+  "polygon:0x831753dd7087cac61ab5644b308642cc1c33dc13": {
+    "chain": "polygon",
+    "symbol": "QUICK",
+    "decimals": 18,
+    "address": "0x831753dd7087cac61ab5644b308642cc1c33dc13"
+  },
+  "polygon:0x2f81e176471cc57fdc76f7d332fb4511bf2bebdd": {
+    "chain": "polygon",
+    "symbol": "RAD",
+    "decimals": 18,
+    "address": "0x2f81e176471cc57fdc76f7d332fb4511bf2bebdd"
+  },
+  "polygon:0x00e5646f60ac6fb446f621d146b6e1886f002905": {
+    "chain": "polygon",
+    "symbol": "RAI",
+    "decimals": 18,
+    "address": "0x00e5646f60ac6fb446f621d146b6e1886f002905"
+  },
+  "polygon:0x780053837ce2ceead2a90d9151aa21fc89ed49c2": {
+    "chain": "polygon",
+    "symbol": "RARI",
+    "decimals": 18,
+    "address": "0x780053837ce2ceead2a90d9151aa21fc89ed49c2"
+  },
+  "polygon:0xc3cffdaf8f3fdf07da6d5e3a89b8723d5e385ff8": {
+    "chain": "polygon",
+    "symbol": "RBC",
+    "decimals": 18,
+    "address": "0xc3cffdaf8f3fdf07da6d5e3a89b8723d5e385ff8"
+  },
+  "polygon:0x19782d3dc4701ceeedcd90f0993f0a9126ed89d0": {
+    "chain": "polygon",
+    "symbol": "REN",
+    "decimals": 18,
+    "address": "0x19782d3dc4701ceeedcd90f0993f0a9126ed89d0"
+  },
+  "polygon:0x6563c1244820cfbd6ca8820fbdf0f2847363f733": {
+    "chain": "polygon",
+    "symbol": "REPv2",
+    "decimals": 18,
+    "address": "0x6563c1244820cfbd6ca8820fbdf0f2847363f733"
+  },
+  "polygon:0xadf2f2ed91755ea3f4bcc9107a494879f633ae7c": {
+    "chain": "polygon",
+    "symbol": "REQ",
+    "decimals": 18,
+    "address": "0xadf2f2ed91755ea3f4bcc9107a494879f633ae7c"
+  },
+  "polygon:0x70c006878a5a50ed185ac4c87d837633923de296": {
+    "chain": "polygon",
+    "symbol": "REVV",
+    "decimals": 18,
+    "address": "0x70c006878a5a50ed185ac4c87d837633923de296"
+  },
+  "polygon:0x3b9db434f08003a89554cdb43b3e0b1f8734bde7": {
+    "chain": "polygon",
+    "symbol": "RGT",
+    "decimals": 18,
+    "address": "0x3b9db434f08003a89554cdb43b3e0b1f8734bde7"
+  },
+  "polygon:0xbe662058e00849c3eef2ac9664f37fefdf2cdbfe": {
+    "chain": "polygon",
+    "symbol": "RLC",
+    "decimals": 9,
+    "address": "0xbe662058e00849c3eef2ac9664f37fefdf2cdbfe"
+  },
+  "polygon:0x76b8d57e5ac6afac5d415a054453d1dd2c3c0094": {
+    "chain": "polygon",
+    "symbol": "RLY",
+    "decimals": 18,
+    "address": "0x76b8d57e5ac6afac5d415a054453d1dd2c3c0094"
+  },
+  "polygon:0x61299774020da444af134c82fa83e3810b309991": {
+    "chain": "polygon",
+    "symbol": "RNDR",
+    "decimals": 18,
+    "address": "0x61299774020da444af134c82fa83e3810b309991"
+  },
+  "polygon:0xf92501c8213da1d6c74a76372ccc720dc8818407": {
+    "chain": "polygon",
+    "symbol": "ROOK",
+    "decimals": 18,
+    "address": "0xf92501c8213da1d6c74a76372ccc720dc8818407"
+  },
+  "polygon:0xbbba073c31bf03b8acf7c28ef0738decf3695683": {
+    "chain": "polygon",
+    "symbol": "SAND",
+    "decimals": 18,
+    "address": "0xbbba073c31bf03b8acf7c28ef0738decf3695683"
+  },
+  "polygon:0x6f8a06447ff6fcf75d803135a7de15ce88c1d4ec": {
+    "chain": "polygon",
+    "symbol": "SHIB",
+    "decimals": 18,
+    "address": "0x6f8a06447ff6fcf75d803135a7de15ce88c1d4ec"
+  },
+  "polygon:0x0c7304fbaf2a320a1c50c46fe03752722f729946": {
+    "chain": "polygon",
+    "symbol": "SLP",
+    "decimals": 0,
+    "address": "0x0c7304fbaf2a320a1c50c46fe03752722f729946"
+  },
+  "polygon:0x50b728d8d964fd00c2d0aad81718b71311fef68a": {
+    "chain": "polygon",
+    "symbol": "SNX",
+    "decimals": 18,
+    "address": "0x50b728d8d964fd00c2d0aad81718b71311fef68a"
+  },
+  "polygon:0xcdb3c70cd25fd15307d84c4f9d37d5c043b33fb2": {
+    "chain": "polygon",
+    "symbol": "SPELL",
+    "decimals": 18,
+    "address": "0xcdb3c70cd25fd15307d84c4f9d37d5c043b33fb2"
+  },
+  "polygon:0xd72357daca2cf11a5f155b9ff7880e595a3f5792": {
+    "chain": "polygon",
+    "symbol": "STORJ",
+    "decimals": 8,
+    "address": "0xd72357daca2cf11a5f155b9ff7880e595a3f5792"
+  },
+  "polygon:0xb36e3391b22a970d31a9b620ae1a414c6c256d2a": {
+    "chain": "polygon",
+    "symbol": "STX",
+    "decimals": 18,
+    "address": "0xb36e3391b22a970d31a9b620ae1a414c6c256d2a"
+  },
+  "polygon:0x60ea918fc64360269da4efbda11d8fc6514617c6": {
+    "chain": "polygon",
+    "symbol": "SUKU",
+    "decimals": 18,
+    "address": "0x60ea918fc64360269da4efbda11d8fc6514617c6"
+  },
+  "polygon:0xa1428174f516f527fafdd146b883bb4428682737": {
+    "chain": "polygon",
+    "symbol": "SUPER",
+    "decimals": 18,
+    "address": "0xa1428174f516f527fafdd146b883bb4428682737"
+  },
+  "polygon:0xf81b4bec6ca8f9fe7be01ca734f55b2b6e03a7a0": {
+    "chain": "polygon",
+    "symbol": "sUSD",
+    "decimals": 18,
+    "address": "0xf81b4bec6ca8f9fe7be01ca734f55b2b6e03a7a0"
+  },
+  "polygon:0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a": {
+    "chain": "polygon",
+    "symbol": "SUSHI",
+    "decimals": 18,
+    "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a"
+  },
+  "polygon:0x6abb753c1893194de4a83c6e8b4eadfc105fd5f5": {
+    "chain": "polygon",
+    "symbol": "SXP",
+    "decimals": 18,
+    "address": "0x6abb753c1893194de4a83c6e8b4eadfc105fd5f5"
+  },
+  "polygon:0xe1708abde4847b4929b70547e5197f1ba1db2250": {
+    "chain": "polygon",
+    "symbol": "TOKE",
+    "decimals": 18,
+    "address": "0xe1708abde4847b4929b70547e5197f1ba1db2250"
+  },
+  "polygon:0xa7b98d63a137bf402b4570799ac4cad0bb1c4b1c": {
+    "chain": "polygon",
+    "symbol": "TRAC",
+    "decimals": 18,
+    "address": "0xa7b98d63a137bf402b4570799ac4cad0bb1c4b1c"
+  },
+  "polygon:0xe3322702bedaaed36cddab233360b939775ae5f1": {
+    "chain": "polygon",
+    "symbol": "TRB",
+    "decimals": 18,
+    "address": "0xe3322702bedaaed36cddab233360b939775ae5f1"
+  },
+  "polygon:0x8676815789211e799a6dc86d02748adf9cf86836": {
+    "chain": "polygon",
+    "symbol": "TRIBE",
+    "decimals": 18,
+    "address": "0x8676815789211e799a6dc86d02748adf9cf86836"
+  },
+  "polygon:0x5b77bca482bd3e7958b1103d123888efccdaf803": {
+    "chain": "polygon",
+    "symbol": "TRU",
+    "decimals": 8,
+    "address": "0x5b77bca482bd3e7958b1103d123888efccdaf803"
+  },
+  "polygon:0x5667dcc0ab74d1b1355c3b2061893399331b57e2": {
+    "chain": "polygon",
+    "symbol": "TVK",
+    "decimals": 18,
+    "address": "0x5667dcc0ab74d1b1355c3b2061893399331b57e2"
+  },
+  "polygon:0x3066818837c5e6ed6601bd5a91b0762877a6b731": {
+    "chain": "polygon",
+    "symbol": "UMA",
+    "decimals": 18,
+    "address": "0x3066818837c5e6ed6601bd5a91b0762877a6b731"
+  },
+  "polygon:0xb33eaad8d922b1083446dc23f610c2567fb5180f": {
+    "chain": "polygon",
+    "symbol": "UNI",
+    "decimals": 18,
+    "address": "0xb33eaad8d922b1083446dc23f610c2567fb5180f"
+  },
+  "polygon:0x2791bca1f2de4661ed88a30c99a7a9449aa84174": {
+    "chain": "polygon",
+    "symbol": "USDC",
+    "decimals": 6,
+    "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174"
+  },
+  "polygon:0xc2132d05d31c914a87c6611c10748aeb04b58e8f": {
+    "chain": "polygon",
+    "symbol": "USDT",
+    "decimals": 6,
+    "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f"
+  },
+  "polygon:0xd0258a3fd00f38aa8090dfee343f10a9d4d30d3f": {
+    "chain": "polygon",
+    "symbol": "VOXEL",
+    "decimals": 18,
+    "address": "0xd0258a3fd00f38aa8090dfee343f10a9d4d30d3f"
+  },
+  "polygon:0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6": {
+    "chain": "polygon",
+    "symbol": "WBTC",
+    "decimals": 8,
+    "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6"
+  },
+  "polygon:0x90bb6feb70a9a43cfaaa615f856ba309fd759a90": {
+    "chain": "polygon",
+    "symbol": "WCFG",
+    "decimals": 18,
+    "address": "0x90bb6feb70a9a43cfaaa615f856ba309fd759a90"
+  },
+  "polygon:0x7ceb23fd6bc0add59e62ac25578270cff1b9f619": {
+    "chain": "polygon",
+    "symbol": "WETH",
+    "decimals": 18,
+    "address": "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619"
+  },
+  "polygon:0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270": {
+    "chain": "polygon",
+    "symbol": "WMATIC",
+    "decimals": 18,
+    "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"
+  },
+  "polygon:0x1b815d120b3ef02039ee11dc2d33de7aa4a8c603": {
+    "chain": "polygon",
+    "symbol": "WOO",
+    "decimals": 18,
+    "address": "0x1b815d120b3ef02039ee11dc2d33de7aa4a8c603"
+  },
+  "polygon:0xd2507e7b5794179380673870d88b22f94da6abe0": {
+    "chain": "polygon",
+    "symbol": "XYO",
+    "decimals": 18,
+    "address": "0xd2507e7b5794179380673870d88b22f94da6abe0"
+  },
+  "polygon:0xda537104d6a5edd53c6fbba9a898708e465260b6": {
+    "chain": "polygon",
+    "symbol": "YFI",
+    "decimals": 18,
+    "address": "0xda537104d6a5edd53c6fbba9a898708e465260b6"
+  },
+  "polygon:0xb8cb8a7f4c2885c03e57e973c74827909fdc2032": {
+    "chain": "polygon",
+    "symbol": "YFII",
+    "decimals": 18,
+    "address": "0xb8cb8a7f4c2885c03e57e973c74827909fdc2032"
+  },
+  "polygon:0x82617aa52dddf5ed9bb7b370ed777b3182a30fd1": {
+    "chain": "polygon",
+    "symbol": "YGG",
+    "decimals": 18,
+    "address": "0x82617aa52dddf5ed9bb7b370ed777b3182a30fd1"
+  },
+  "polygon:0x5559edb74751a0ede9dea4dc23aee72cca6be3d5": {
+    "chain": "polygon",
+    "symbol": "ZRX",
+    "decimals": 18,
+    "address": "0x5559edb74751a0ede9dea4dc23aee72cca6be3d5"
+  }
+}
