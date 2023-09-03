@@ -7,8 +7,7 @@ import { ContractLog } from '../../types/domain';
 import { ContextServices, ILogIndexer } from '../../types/namespaces';
 import { BlockAndTime, IndexOptions } from '../../types/options';
 
-const SingleModeQueryRange = 1000;
-const NetworkMOdeQueryRange = 500;
+const SingleModeQueryRange = 2000;
 
 export class LogIndexer implements ILogIndexer {
   public readonly name: string = 'logindex';
@@ -26,16 +25,6 @@ export class LogIndexer implements ILogIndexer {
     }
 
     return null;
-  }
-
-  private shouldSaveThisLog(chain: string, address: string, topic: string): boolean {
-    for (const config of LogindexConfigs) {
-      if (chain === config.chain && compareAddress(config.address, address) && config.topics.indexOf(topic) > -1) {
-        return true;
-      }
-    }
-
-    return false;
   }
 
   private async saveLogs(chain: string, logs: Array<ContractLog>) {
@@ -115,10 +104,15 @@ export class LogIndexer implements ILogIndexer {
   }
 
   public async run(options: IndexOptions): Promise<void> {
+    let configs: Array<IndexConfig> = [];
     if (options.address) {
-      await this.runSingleMode(options.chain, options.address, options.fromBlock);
+      configs = LogindexConfigs.filter((item) => item.chain === options.chain && item.address === options.address);
     } else {
-      await this.runNetworkMode(options.chain, options.fromBlock);
+      configs = LogindexConfigs.filter((item) => item.chain === options.chain);
+    }
+
+    for (const config of configs) {
+      await this.runSingleMode(options.chain, config.address, options.fromBlock);
     }
   }
 
@@ -196,69 +190,6 @@ export class LogIndexer implements ILogIndexer {
       });
 
       startBlock += SingleModeQueryRange;
-    }
-  }
-
-  private async runNetworkMode(chain: string, fromBlock: number): Promise<void> {
-    const statesCollection = await this.services.mongo.getCollection(EnvConfig.mongo.collections.states);
-    const rawlogsCollection = await this.services.mongo.getCollection(EnvConfig.mongo.collections.rawlogs);
-
-    let startBlock = LogindexNetworkStartBlocks[chain] > fromBlock ? LogindexNetworkStartBlocks[chain] : fromBlock;
-
-    const stateKey = `log-index-network-${chain}`;
-    if (startBlock === 0) {
-      const states: Array<any> = await statesCollection.find({ name: stateKey }).toArray();
-      if (states.length > 0) {
-        startBlock = Number(states[0].blockNumber) > startBlock ? Number(states[0].blockNumber) : startBlock;
-      }
-    }
-
-    const web3 = this.services.web3.getProvider(chain);
-    const latestBlock = Number(await web3.eth.getBlockNumber());
-
-    while (startBlock <= latestBlock) {
-      const startExeTime = getTimestamp();
-
-      const toBlock =
-        startBlock + NetworkMOdeQueryRange > latestBlock ? latestBlock : startBlock + NetworkMOdeQueryRange;
-
-      const logs: Array<any> = await web3.eth.getPastLogs({
-        fromBlock: startBlock,
-        toBlock: toBlock,
-      });
-      const blockTimes = await this.services.web3.getBlockTimes({
-        chain,
-        fromBlock: startBlock,
-        numberOfBlocks: NetworkMOdeQueryRange,
-      });
-
-      const filterLogs: Array<any> = [];
-      for (const log of logs) {
-        if (this.shouldSaveThisLog(chain, log.address, log.topics[0])) {
-          filterLogs.push(log);
-        }
-      }
-
-      const contractLogs: Array<ContractLog> = await this.transformLogs(chain, filterLogs, blockTimes);
-
-      await this.saveLogs(chain, contractLogs);
-      await this.saveState(stateKey, toBlock);
-
-      const endExeTime = getTimestamp();
-      const elapsed = endExeTime - startExeTime;
-
-      logger.info('indexed contract logs', {
-        service: this.name,
-        mode: 'network',
-        chain,
-        configs: LogindexConfigs.length,
-        logs: filterLogs.length,
-        fromBlock: startBlock,
-        toBlock: toBlock,
-        elapsed: `${elapsed}s`,
-      });
-
-      startBlock += NetworkMOdeQueryRange;
     }
   }
 }

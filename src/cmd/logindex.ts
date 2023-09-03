@@ -11,40 +11,20 @@ export class LogindexCommand extends BasicCommand {
   }
 
   public async execute(argv: any) {
-    const mode = argv.mode;
-    if (mode === 'single' || mode === 'network') {
-      const services = await super.getServices();
-      const logindex = new LogIndexer(services);
+    const services = await super.getServices();
+    const logindex = new LogIndexer(services);
 
-      if (mode === 'single') {
-        const chain = argv.chain;
-        const address = normalizeAddress(argv.address);
-        const fromBlock = argv.fromBlock ? Number(argv.fromBlock) : 0;
-        while (true) {
-          await logindex.run({ chain, address, fromBlock });
+    const chain = argv.chain;
+    const address = argv.address ? normalizeAddress(argv.address) : undefined;
+    const fromBlock = argv.fromBlock ? Number(argv.fromBlock) : 0;
+    while (true) {
+      await logindex.run({ chain, address, fromBlock });
 
-          if (argv.exit) {
-            process.exit(0);
-          }
-
-          await sleep(5 * 50);
-        }
-      } else {
-        const chain = argv.chain;
-        const fromBlock = argv.fromBlock ? Number(argv.fromBlock) : 0;
-        while (true) {
-          await logindex.run({ chain, address: undefined, fromBlock });
-
-          if (argv.exit) {
-            process.exit(0);
-          }
-
-          await sleep(5 * 50);
-        }
+      if (argv.exit) {
+        process.exit(0);
       }
-    } else {
-      console.log(`mode ${mode} is not supported`);
-      process.exit(0);
+
+      await sleep(5 * 50);
     }
   }
 
@@ -55,11 +35,6 @@ export class LogindexCommand extends BasicCommand {
         default: 'ethereum',
         describe:
           'Index logs from given blockchain, supported: ethereum, arbitrum, base, polygon, optimism, bnbchain, avalanche.',
-      },
-      mode: {
-        type: 'string',
-        default: 'network',
-        describe: 'The worker mode: single or network, default: network.',
       },
       address: {
         type: 'string',
