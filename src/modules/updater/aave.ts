@@ -15,12 +15,12 @@ const LendingPoolV2: Array<string> = [
 ];
 
 const LendingPoolV3: Array<string> = [
-  'aavev2:ethereum:0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2:16291127',
-  'aavev2:polygon:0x794a61358d6845594f94dc1db02a252b5b4814ad:25826028',
-  'aavev2:avalanche:0x794a61358d6845594f94dc1db02a252b5b4814ad:11970506',
-  'aavev2:arbitrum:0x794a61358d6845594f94dc1db02a252b5b4814ad:7742429',
-  'aavev2:optimism:0x794a61358d6845594f94dc1db02a252b5b4814ad:4365693',
-  'aavev2:base:0xa238dd80c259a72e81d7e4664a9801593f98d1c5:2357134',
+  'aavev3:ethereum:0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2:16291127',
+  'aavev3:polygon:0x794a61358d6845594f94dc1db02a252b5b4814ad:25826028',
+  'aavev3:avalanche:0x794a61358d6845594f94dc1db02a252b5b4814ad:11970506',
+  'aavev3:arbitrum:0x794a61358d6845594f94dc1db02a252b5b4814ad:7742429',
+  'aavev3:optimism:0x794a61358d6845594f94dc1db02a252b5b4814ad:4365693',
+  'aavev3:base:0xa238dd80c259a72e81d7e4664a9801593f98d1c5:2357134',
 ];
 
 const BlacklistTokens: Array<string> = [

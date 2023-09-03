@@ -127,11 +127,9 @@ export class LogIndexer implements ILogIndexer {
     let startBlock = config.birthBlock > fromBlock ? config.birthBlock : fromBlock;
 
     const stateKey = `log-index-contract-${chain}-${address}`;
-    if (startBlock === 0) {
-      const states: Array<any> = await statesCollection.find({ name: stateKey }).toArray();
-      if (states.length > 0) {
-        startBlock = Number(states[0].blockNumber) > startBlock ? Number(states[0].blockNumber) : startBlock;
-      }
+    const states: Array<any> = await statesCollection.find({ name: stateKey }).toArray();
+    if (states.length > 0) {
+      startBlock = Number(states[0].blockNumber) > startBlock ? Number(states[0].blockNumber) : startBlock;
     }
 
     const web3 = this.services.web3.getProvider(chain);
