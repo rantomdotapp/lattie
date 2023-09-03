@@ -153,11 +153,11 @@ export class LogIndexer implements ILogIndexer {
       const toBlock = startBlock + SingleModeQueryRange > latestBlock ? latestBlock : startBlock + SingleModeQueryRange;
 
       let logs: Array<any> = [];
-      for (const topic of config.topics) {
+      for (const topics of config.topics) {
         logs = logs.concat(
           await web3.eth.getPastLogs({
             address: address,
-            topics: [topic],
+            topics: topics,
             fromBlock: startBlock,
             toBlock: toBlock,
           }),

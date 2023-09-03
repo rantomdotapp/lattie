@@ -35,7 +35,7 @@ export interface EnvConfig {
 export interface IndexConfig {
   chain: string;
   address: string; // contract address
-  topics: Array<string>; // the topic to be indexed
+  topics: Array<Array<string>>; // the topics to be indexed
 
   birthBlock: number;
 }
