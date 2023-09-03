@@ -22,6 +22,6 @@ export const OracleChainlinkConfigs: { [key: string]: OracleConfig } = {
   ...OracleConfigChainlinkSources,
 };
 
-export const GenesisTimes: {[key: string]: number} = {
+export const GenesisTimes: { [key: string]: number } = {
   lending: 1609459200,
-}
+};

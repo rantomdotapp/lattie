@@ -20,7 +20,8 @@ export interface EnvConfig {
     collections: {
       states: string;
       metrics: string;
-      oraclePrices: string;
+      oracles: string;
+      rawlogs: string;
     };
   };
   sentry: {
@@ -29,6 +30,14 @@ export interface EnvConfig {
   blockchains: {
     [key: string]: Blockchain;
   };
+}
+
+export interface IndexConfig {
+  chain: string;
+  address: string; // contract address
+  topics: Array<string>; // the topic to be indexed
+
+  birthBlock: number;
 }
 
 export interface Contract {

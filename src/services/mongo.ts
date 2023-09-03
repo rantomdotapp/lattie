@@ -72,11 +72,16 @@ export class MongoService implements IMongoService {
   }
 
   private async setupIndies() {
+    const statesCollection = await this.getCollection(envConfig.mongo.collections.states);
     const metricsCollection = await this.getCollection(envConfig.mongo.collections.metrics);
-    const oraclePricesCollection = await this.getCollection(envConfig.mongo.collections.oraclePrices);
+    const oraclesCollection = await this.getCollection(envConfig.mongo.collections.oracles);
+    const rawlogsCollection = await this.getCollection(envConfig.mongo.collections.rawlogs);
 
+    statesCollection.createIndex({ name: 1 }, { background: true });
     metricsCollection.createIndex({ protocol: 1, metric: 1, timestamp: 1 }, { background: true });
     metricsCollection.createIndex({ protocol: 1, 'token.address': 1, timestamp: 1 }, { background: true });
-    oraclePricesCollection.createIndex({ chain: 1, address: 1, timestamp: 1 }, { background: true });
+    oraclesCollection.createIndex({ chain: 1, address: 1, timestamp: 1 }, { background: true });
+    rawlogsCollection.createIndex({ chain: 1, address: 1, transactionHash: 1, logIndex: 1 }, { background: true });
+    rawlogsCollection.createIndex({ chain: 1, address: 1, blockNumber: 1, timestamp: 1 }, { background: true });
   }
 }

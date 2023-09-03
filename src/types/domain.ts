@@ -1,5 +1,16 @@
 import { LendingMarketVersion, Token } from './configs';
 
+export interface ContractLog {
+  chain: string;
+  address: string; // contract address
+  topics: Array<string>;
+  data: string;
+  blockNumber: number;
+  timestamp: number;
+  transactionHash: string;
+  logIndex: number;
+}
+
 export type DataMetric = 'lending';
 
 export interface SnapshotMetadata {

@@ -1,3 +1,4 @@
+import { GenesisTimes } from '../../configs';
 import EnvConfig from '../../configs/envConfig';
 import logger from '../../lib/logger';
 import { getStartDayTimestamp, getTimestamp, getTodayUTCTimestamp } from '../../lib/utils';
@@ -5,7 +6,6 @@ import { LendingMarketConfig } from '../../types/configs';
 import { DataMetric, LendingMarketSnapshot } from '../../types/domain';
 import { ContextServices, ICollector } from '../../types/namespaces';
 import { CollectorOptions } from '../../types/options';
-import {GenesisTimes} from "../../configs";
 
 export class BaseCollector implements ICollector {
   public readonly name: string = 'base';

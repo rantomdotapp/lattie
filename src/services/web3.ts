@@ -5,16 +5,19 @@ import Erc20Abi from '../configs/abi/ERC20.json';
 import { AddressEee, AddressZero, HardCodeTokens, TokenLists, TokenNatives } from '../configs/constants';
 import EnvConfig from '../configs/envConfig';
 import logger from '../lib/logger';
-import { compareAddress, normalizeAddress } from '../lib/utils';
+import { compareAddress, normalizeAddress, sleep } from '../lib/utils';
 import { Token } from '../types/configs';
 import { IWeb3Service } from '../types/namespaces';
-import { Web3SingleCallOptions } from '../types/options';
+import { BlockAndTime, GetBlockTimesOptions, Web3SingleCallOptions } from '../types/options';
+import { Memcache } from './memcache';
 
-export class Web3Service implements IWeb3Service {
+export class Web3Service extends Memcache implements IWeb3Service {
   public readonly name: string = 'web3';
   public readonly providers: { [key: string]: Web3 };
 
   constructor() {
+    super();
+
     this.providers = {};
 
     for (const [chain, config] of Object.entries(EnvConfig.blockchains)) {
@@ -155,5 +158,87 @@ export class Web3Service implements IWeb3Service {
     }
 
     return result;
+  }
+
+  public async getBlockTime(chain: string, blockNumber: number): Promise<number> {
+    const cacheKey = `block-time-${chain}-${blockNumber}`;
+    const cacheData = this.get(cacheKey);
+    if (cacheData) {
+      return cacheData;
+    }
+
+    const web3 = this.getProvider(chain);
+
+    while (true) {
+      try {
+        const block = await web3.eth.getBlock(blockNumber);
+        this.set(cacheKey, block.timestamp);
+        return Number(block.timestamp);
+      } catch (e: any) {
+        logger.error('failed to query block from rpc', {
+          service: this.name,
+          chain,
+          number: blockNumber,
+          error: e.message,
+        });
+
+        await sleep(5);
+      }
+    }
+  }
+
+  public async getBlockTimes(options: GetBlockTimesOptions): Promise<{ [key: number]: BlockAndTime }> {
+    const blockTimes: { [key: number]: BlockAndTime } = {};
+
+    let startBlock = options.fromBlock;
+    const endBlock = options.fromBlock + options.numberOfBlocks;
+
+    const queryLimit = 1000;
+    while (startBlock <= endBlock) {
+      try {
+        const response = await axios.post(
+          EnvConfig.blockchains[options.chain].blockSubgraph,
+          {
+            query: `
+        {
+          blocks(first: ${queryLimit}, where: {number_gte: ${startBlock}}, orderBy: number, orderDirection: asc) {
+            number
+            timestamp
+          }
+        }
+      `,
+          },
+          {
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          },
+        );
+
+        if (response.data.errors) {
+          throw Error(`query subgraph error: ${response.data.errors.toString()}`);
+        }
+
+        for (const block of response.data.data.blocks) {
+          blockTimes[Number(block.number)] = {
+            chain: options.chain,
+            blockNumber: Number(block.number),
+            timestamp: Number(Number(block.timestamp)),
+          };
+        }
+
+        startBlock += queryLimit;
+      } catch (e: any) {
+        logger.error('failed to query block time from subgraph', {
+          service: this.name,
+          ...options,
+          error: e.message,
+        });
+
+        await sleep(5);
+      }
+    }
+
+    return blockTimes;
   }
 }

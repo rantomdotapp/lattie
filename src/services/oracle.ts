@@ -1,6 +1,5 @@
 import { OracleChainlinkConfigs, OracleConfigs } from '../configs';
 import EnvConfig from '../configs/envConfig';
-import { OracleChainlinkConfigBases } from '../configs/oracles/chainlink';
 import logger from '../lib/logger';
 import { getStartDayTimestamp, sleep } from '../lib/utils';
 import { ChainlinkOracleLib } from '../modules/oracles/libs/chainlink';
@@ -157,9 +156,9 @@ export class OracleService extends Memcache implements IOracleService {
 
     // firstly, we find price in database
     if (this.mongo) {
-      const oraclePricesCollection = await this.mongo.getCollection(EnvConfig.mongo.collections.oraclePrices);
+      const oraclesCollection = await this.mongo.getCollection(EnvConfig.mongo.collections.oracles);
 
-      const prices: Array<any> = await oraclePricesCollection
+      const prices: Array<any> = await oraclesCollection
         .find({
           chain: chain,
           address: address,
@@ -176,9 +175,9 @@ export class OracleService extends Memcache implements IOracleService {
     if (priceUSD !== 0) {
       // save to database
       if (this.mongo) {
-        const oraclePricesCollection = await this.mongo.getCollection(EnvConfig.mongo.collections.oraclePrices);
+        const oraclesCollection = await this.mongo.getCollection(EnvConfig.mongo.collections.oracles);
 
-        await oraclePricesCollection.updateOne(
+        await oraclesCollection.updateOne(
           {
             chain: chain,
             address: address,

@@ -11,13 +11,10 @@ const envConfig: EnvConfig = {
     databaseName: String(process.env.LATTIE_MONGODB_NAME),
     connectionUri: String(process.env.LATTIE_MONGODB_URI),
     collections: {
-      states: `${MongodbPrefix}.states`,
-
-      // all metrics
+      states: `${MongodbPrefix}.lattie.states`,
       metrics: `${MongodbPrefix}.lattie.metrics`,
-
-      // oracle price
-      oraclePrices: `${MongodbPrefix}.oracle.prices`,
+      oracles: `${MongodbPrefix}.lattie.oracles`,
+      rawlogs: `${MongodbPrefix}.lattie.rawlogs`,
     },
   },
   sentry: {

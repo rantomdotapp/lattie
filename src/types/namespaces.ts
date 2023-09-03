@@ -3,7 +3,7 @@ import { Web3 } from 'web3';
 
 import { LendingMarketConfig, Token } from './configs';
 import { DataMetric } from './domain';
-import { Web3SingleCallOptions } from './options';
+import { BlockAndTime, GetBlockTimesOptions, IndexOptions, Web3SingleCallOptions } from './options';
 
 export interface IProvider {
   name: string;
@@ -29,6 +29,13 @@ export interface IWeb3Service extends IProvider {
 
   // read contract with a single call
   singlecall: (options: Web3SingleCallOptions) => Promise<any>;
+
+  // help to get block time from node rpc
+  getBlockTime: (chain: string, blockNumber: number) => Promise<number>;
+
+  // help to get block timestamp
+  // query subgraph and get block timestamp of 1000 blocks
+  getBlockTimes: (options: GetBlockTimesOptions) => Promise<{ [key: number]: BlockAndTime }>;
 }
 
 export interface IOracleService extends IProvider {
@@ -63,4 +70,11 @@ export interface IOracleUpdater extends IProvider {
 
   // start to run daemon
   run: () => Promise<void>;
+}
+
+export interface ILogIndexer extends IProvider {
+  services: ContextServices;
+
+  // start the worker
+  run: (options: IndexOptions) => Promise<void>;
 }

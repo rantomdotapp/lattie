@@ -1,13 +1,13 @@
 import BigNumber from 'bignumber.js';
 
 import LendingPoolV1Abi from '../../../configs/abi/aave/LendingPoolV1.json';
+import { AddressEee, AddressZero } from '../../../configs/constants';
 import { normalizeAddress } from '../../../lib/utils';
 import { LendingMarketConfig } from '../../../types/configs';
 import { LendingMarketSnapshot } from '../../../types/domain';
 import { ContextServices } from '../../../types/namespaces';
 import { CollectorOptions } from '../../../types/options';
 import { BaseCollector } from '../base';
-import {AddressEee, AddressZero} from "../../../configs/constants";
 
 export class Aavev1Collector extends BaseCollector {
   public readonly name: string = 'aavev1';
