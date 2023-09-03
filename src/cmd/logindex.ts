@@ -30,6 +30,17 @@ export class LogindexCommand extends BasicCommand {
           await sleep(5 * 50);
         }
       } else {
+        const chain = argv.chain;
+        const fromBlock = argv.fromBlock ? Number(argv.fromBlock) : 0;
+        while (true) {
+          await logindex.run({ chain, address: undefined, fromBlock });
+
+          if (argv.exit) {
+            process.exit(0);
+          }
+
+          await sleep(5 * 50);
+        }
       }
     } else {
       console.log(`mode ${mode} is not supported`);

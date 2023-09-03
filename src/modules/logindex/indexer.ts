@@ -1,13 +1,14 @@
 import EnvConfig from '../../configs/envConfig';
-import { LogindexConfigs } from '../../configs/logindex';
+import { LogindexConfigs, LogindexNetworkStartBlocks } from '../../configs/logindex';
 import logger from '../../lib/logger';
-import { getTimestamp, normalizeAddress } from '../../lib/utils';
+import { compareAddress, getTimestamp, normalizeAddress } from '../../lib/utils';
 import { IndexConfig } from '../../types/configs';
 import { ContractLog } from '../../types/domain';
 import { ContextServices, ILogIndexer } from '../../types/namespaces';
 import { BlockAndTime, IndexOptions } from '../../types/options';
 
-const QueryRange = 2000;
+const SingleModeQueryRange = 1000;
+const NetworkMOdeQueryRange = 500;
 
 export class LogIndexer implements ILogIndexer {
   public readonly name: string = 'logindex';
@@ -25,6 +26,61 @@ export class LogIndexer implements ILogIndexer {
     }
 
     return null;
+  }
+
+  private shouldSaveThisLog(chain: string, address: string, topic: string): boolean {
+    for (const config of LogindexConfigs) {
+      if (chain === config.chain && compareAddress(config.address, address) && config.topics.indexOf(topic) > -1) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  private async saveLogs(chain: string, logs: Array<ContractLog>) {
+    const rawlogsCollection = await this.services.mongo.getCollection(EnvConfig.mongo.collections.rawlogs);
+
+    const operations: Array<any> = [];
+    for (const log of logs) {
+      operations.push({
+        updateOne: {
+          filter: {
+            chain: chain,
+            address: normalizeAddress(log.address),
+            transactionHash: log.transactionHash,
+            logIndex: log.logIndex,
+          },
+          update: {
+            $set: {
+              ...log,
+            },
+          },
+          upsert: true,
+        },
+      });
+    }
+    if (operations.length > 0) {
+      await rawlogsCollection.bulkWrite(operations);
+    }
+  }
+
+  private async saveState(name: string, blockNumber: number) {
+    const statesCollection = await this.services.mongo.getCollection(EnvConfig.mongo.collections.states);
+    await statesCollection.updateOne(
+      {
+        name: name,
+      },
+      {
+        $set: {
+          name: name,
+          blockNumber: blockNumber,
+        },
+      },
+      {
+        upsert: true,
+      },
+    );
   }
 
   private async transformLogs(
@@ -73,7 +129,6 @@ export class LogIndexer implements ILogIndexer {
     }
 
     const statesCollection = await this.services.mongo.getCollection(EnvConfig.mongo.collections.states);
-    const rawlogsCollection = await this.services.mongo.getCollection(EnvConfig.mongo.collections.rawlogs);
 
     let startBlock = config.birthBlock > fromBlock ? config.birthBlock : fromBlock;
 
@@ -101,7 +156,7 @@ export class LogIndexer implements ILogIndexer {
     while (startBlock <= latestBlock) {
       const startExeTime = getTimestamp();
 
-      const toBlock = startBlock + QueryRange > latestBlock ? latestBlock : startBlock + QueryRange;
+      const toBlock = startBlock + SingleModeQueryRange > latestBlock ? latestBlock : startBlock + SingleModeQueryRange;
 
       let logs: Array<any> = [];
       for (const topic of config.topics) {
@@ -118,51 +173,15 @@ export class LogIndexer implements ILogIndexer {
       const blockTimes = await this.services.web3.getBlockTimes({
         chain,
         fromBlock: startBlock,
-        numberOfBlocks: QueryRange,
+        numberOfBlocks: SingleModeQueryRange,
       });
       const contractLogs: Array<ContractLog> = await this.transformLogs(chain, logs, blockTimes);
 
-      const operations: Array<any> = [];
-      for (const log of contractLogs) {
-        operations.push({
-          updateOne: {
-            filter: {
-              chain: chain,
-              address: normalizeAddress(log.address),
-              transactionHash: log.transactionHash,
-              logIndex: log.logIndex,
-            },
-            update: {
-              $set: {
-                ...log,
-              },
-            },
-            upsert: true,
-          },
-        });
-      }
-      if (operations.length > 0) {
-        await rawlogsCollection.bulkWrite(operations);
-      }
-
-      // save state
-      await statesCollection.updateOne(
-        {
-          name: stateKey,
-        },
-        {
-          $set: {
-            name: stateKey,
-            blockNumber: toBlock,
-          },
-        },
-        {
-          upsert: true,
-        },
-      );
+      await this.saveLogs(chain, contractLogs);
+      await this.saveState(stateKey, toBlock);
 
       const endExeTime = getTimestamp();
-      const elapsed = Math.floor((endExeTime - startExeTime) / 1000);
+      const elapsed = endExeTime - startExeTime;
 
       logger.info('indexed contract logs', {
         service: this.name,
@@ -170,15 +189,76 @@ export class LogIndexer implements ILogIndexer {
         chain,
         address,
         topics: config.topics.length,
-        logs: operations.length,
+        logs: contractLogs.length,
         fromBlock: startBlock,
         toBlock: toBlock,
         elapsed: `${elapsed}s`,
       });
 
-      startBlock += QueryRange;
+      startBlock += SingleModeQueryRange;
     }
   }
 
-  private async runNetworkMode(chain: string, fromBlock: number): Promise<void> {}
+  private async runNetworkMode(chain: string, fromBlock: number): Promise<void> {
+    const statesCollection = await this.services.mongo.getCollection(EnvConfig.mongo.collections.states);
+    const rawlogsCollection = await this.services.mongo.getCollection(EnvConfig.mongo.collections.rawlogs);
+
+    let startBlock = LogindexNetworkStartBlocks[chain] > fromBlock ? LogindexNetworkStartBlocks[chain] : fromBlock;
+
+    const stateKey = `log-index-network-${chain}`;
+    if (startBlock === 0) {
+      const states: Array<any> = await statesCollection.find({ name: stateKey }).toArray();
+      if (states.length > 0) {
+        startBlock = Number(states[0].blockNumber) > startBlock ? Number(states[0].blockNumber) : startBlock;
+      }
+    }
+
+    const web3 = this.services.web3.getProvider(chain);
+    const latestBlock = Number(await web3.eth.getBlockNumber());
+
+    while (startBlock <= latestBlock) {
+      const startExeTime = getTimestamp();
+
+      const toBlock =
+        startBlock + NetworkMOdeQueryRange > latestBlock ? latestBlock : startBlock + NetworkMOdeQueryRange;
+
+      const logs: Array<any> = await web3.eth.getPastLogs({
+        fromBlock: startBlock,
+        toBlock: toBlock,
+      });
+      const blockTimes = await this.services.web3.getBlockTimes({
+        chain,
+        fromBlock: startBlock,
+        numberOfBlocks: NetworkMOdeQueryRange,
+      });
+
+      const filterLogs: Array<any> = [];
+      for (const log of logs) {
+        if (this.shouldSaveThisLog(chain, log.address, log.topics[0])) {
+          filterLogs.push(log);
+        }
+      }
+
+      const contractLogs: Array<ContractLog> = await this.transformLogs(chain, filterLogs, blockTimes);
+
+      await this.saveLogs(chain, contractLogs);
+      await this.saveState(stateKey, toBlock);
+
+      const endExeTime = getTimestamp();
+      const elapsed = endExeTime - startExeTime;
+
+      logger.info('indexed contract logs', {
+        service: this.name,
+        mode: 'network',
+        chain,
+        configs: LogindexConfigs.length,
+        logs: filterLogs.length,
+        fromBlock: startBlock,
+        toBlock: toBlock,
+        elapsed: `${elapsed}s`,
+      });
+
+      startBlock += NetworkMOdeQueryRange;
+    }
+  }
 }

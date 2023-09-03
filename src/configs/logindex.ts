@@ -1,5 +1,9 @@
 import { IndexConfig } from '../types/configs';
 
+export const LogindexNetworkStartBlocks: { [key: string]: number } = {
+  ethereum: 10736242,
+};
+
 export const LogindexConfigs: Array<IndexConfig> = [
   {
     chain: 'ethereum',
