@@ -1,5 +1,9 @@
+import fs from 'fs';
+
+import { LogindexConfigs } from '../configs/logindex';
 import { normalizeAddress, sleep } from '../lib/utils';
 import { LogIndexer } from '../modules/logindex/indexer';
+import { IndexConfig } from '../types/configs';
 import { BasicCommand } from './basic';
 
 export class LogindexCommand extends BasicCommand {
@@ -11,8 +15,20 @@ export class LogindexCommand extends BasicCommand {
   }
 
   public async execute(argv: any) {
+    // default
+    let configs: Array<IndexConfig> = LogindexConfigs;
+
+    if (argv.config) {
+      try {
+        configs = JSON.parse(fs.readFileSync(argv.config).toString());
+      } catch (e: any) {
+        console.log(`failed to read config file ${argv.config} error ${e.message}`);
+        process.exit(0);
+      }
+    }
+
     const services = await super.getServices();
-    const logindex = new LogIndexer(services);
+    const logindex = new LogIndexer(services, configs);
 
     const chain = argv.chain;
     const address = argv.address ? normalizeAddress(argv.address) : undefined;
@@ -45,6 +61,11 @@ export class LogindexCommand extends BasicCommand {
         type: 'number',
         default: 0,
         describe: 'Index logs from given initial block number.',
+      },
+      config: {
+        type: 'string',
+        default: '',
+        describe: 'Path to JSON file contains a list of contract index configs.',
       },
       exit: {
         type: 'boolean',

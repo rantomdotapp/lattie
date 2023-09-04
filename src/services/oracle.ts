@@ -24,7 +24,21 @@ export class OracleService extends Memcache implements IOracleService {
   // this function don't care the quote token is any
   // just return how many base token per quote token
   // or return the latest answer if it is chainlink oracle
-  private async getOracleQuotePrice(config: OracleConfig, blockNumber: number): Promise<number> {
+  private async getOracleQuotePrice(config: OracleConfig, timestamp: number): Promise<number> {
+    let blockNumber = 0;
+    while (blockNumber === 0) {
+      blockNumber = await this.web3.getBlockAtTimestamp(config.chain, timestamp);
+      if (blockNumber === 0) {
+        logger.warn('failed to get block number', {
+          service: this.name,
+          chain: config.chain,
+          timestamp: timestamp,
+        });
+      }
+
+      await sleep(5);
+    }
+
     const cacheKey = `oracle-${config.type}-${config.chain}-${config.address}-${blockNumber}`;
     const cacheData = this.get(cacheKey);
     if (cacheData) {
@@ -97,33 +111,19 @@ export class OracleService extends Memcache implements IOracleService {
       return Number(cacheData);
     }
 
-    let blockNumber = 0;
-    while (blockNumber === 0) {
-      blockNumber = await this.web3.getBlockAtTimestamp(chain, timestamp);
-      if (blockNumber === 0) {
-        logger.warn('failed to get block number', {
-          service: this.name,
-          chain: chain,
-          timestamp: timestamp,
-        });
-      }
-
-      await sleep(5);
-    }
-
     let returnPrice = 0;
 
     // first, we try with chainlink oracle source if any
     if (OracleChainlinkConfigs[configKey]) {
       // it is also price in USD
-      returnPrice = await this.getOracleQuotePrice(OracleChainlinkConfigs[configKey], blockNumber);
+      returnPrice = await this.getOracleQuotePrice(OracleChainlinkConfigs[configKey], timestamp);
     }
 
     if (returnPrice === 0) {
       const config: OracleConfig = OracleConfigs[configKey];
 
       // try with config source
-      const quotePrice = await this.getOracleQuotePrice(config, blockNumber);
+      const quotePrice = await this.getOracleQuotePrice(config, timestamp);
       if (OracleConfigs[configKey].type !== 'chainlink') {
         const quoteTokenOracleConfig: OracleConfig =
           OracleConfigs[`${(config as OraclePool2).quoteToken.chain}:${(config as OraclePool2).quoteToken.address}`];
@@ -134,7 +134,7 @@ export class OracleService extends Memcache implements IOracleService {
             address: (config as OraclePool2).quoteToken.address,
           });
         } else {
-          const quoteTokenPriceUSD = await this.getOracleQuotePrice(quoteTokenOracleConfig, blockNumber);
+          const quoteTokenPriceUSD = await this.getOracleQuotePrice(quoteTokenOracleConfig, timestamp);
           returnPrice = quotePrice * quoteTokenPriceUSD;
         }
       } else {

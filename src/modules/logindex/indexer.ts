@@ -1,7 +1,6 @@
 import EnvConfig from '../../configs/envConfig';
-import { LogindexConfigs, LogindexNetworkStartBlocks } from '../../configs/logindex';
 import logger from '../../lib/logger';
-import { compareAddress, getTimestamp, normalizeAddress } from '../../lib/utils';
+import { getTimestamp, normalizeAddress } from '../../lib/utils';
 import { IndexConfig } from '../../types/configs';
 import { ContractLog } from '../../types/domain';
 import { ContextServices, ILogIndexer } from '../../types/namespaces';
@@ -11,14 +10,16 @@ const SingleModeQueryRange = 2000;
 
 export class LogIndexer implements ILogIndexer {
   public readonly name: string = 'logindex';
+  public readonly configs: Array<IndexConfig>;
   public readonly services: ContextServices;
 
-  constructor(services: ContextServices) {
+  constructor(services: ContextServices, configs: Array<IndexConfig>) {
     this.services = services;
+    this.configs = configs;
   }
 
   private getConfig(chain: string, address: string): IndexConfig | null {
-    for (const config of LogindexConfigs) {
+    for (const config of this.configs) {
       if (config.chain === chain && config.address === address) {
         return config;
       }
@@ -106,9 +107,9 @@ export class LogIndexer implements ILogIndexer {
   public async run(options: IndexOptions): Promise<void> {
     let configs: Array<IndexConfig> = [];
     if (options.address) {
-      configs = LogindexConfigs.filter((item) => item.chain === options.chain && item.address === options.address);
+      configs = this.configs.filter((item) => item.chain === options.chain && item.address === options.address);
     } else {
-      configs = LogindexConfigs.filter((item) => item.chain === options.chain);
+      configs = this.configs.filter((item) => item.chain === options.chain);
     }
 
     for (const config of configs) {
