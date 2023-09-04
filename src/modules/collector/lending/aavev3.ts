@@ -31,6 +31,10 @@ export class Aavev3Collector extends BaseCollector {
       blockNumber: blockNumber,
     });
 
+    if (!reserveData) {
+      return null;
+    }
+
     const totalAToken = new BigNumber(reserveData[2].toString());
     const totalStableDebt = new BigNumber(reserveData[3].toString());
     const totalVariableDebt = new BigNumber(reserveData[4].toString());

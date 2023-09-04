@@ -924,7 +924,7 @@
     "birthBlock": 4607005
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -936,7 +936,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -948,7 +948,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -960,7 +960,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -972,7 +972,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -984,7 +984,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -996,7 +996,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1008,7 +1008,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1020,7 +1020,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1032,7 +1032,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1044,7 +1044,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1056,7 +1056,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1068,7 +1068,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1080,7 +1080,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1092,7 +1092,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1104,7 +1104,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1116,7 +1116,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1128,7 +1128,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1140,7 +1140,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1152,7 +1152,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1164,7 +1164,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1176,7 +1176,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1188,7 +1188,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "ethereum",
     "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
     "token": {
@@ -1200,7 +1200,7 @@
     "birthBlock": 16291127
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1212,7 +1212,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1224,7 +1224,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1236,7 +1236,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1248,7 +1248,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1260,7 +1260,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1272,7 +1272,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1284,7 +1284,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1296,7 +1296,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1308,7 +1308,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1320,7 +1320,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1332,7 +1332,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1344,7 +1344,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1356,7 +1356,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1368,7 +1368,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1380,7 +1380,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1392,7 +1392,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1404,7 +1404,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1416,7 +1416,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1428,7 +1428,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "polygon",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1440,7 +1440,7 @@
     "birthBlock": 25826028
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "avalanche",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1452,7 +1452,7 @@
     "birthBlock": 11970506
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "avalanche",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1464,7 +1464,7 @@
     "birthBlock": 11970506
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "avalanche",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1476,7 +1476,7 @@
     "birthBlock": 11970506
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "avalanche",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1488,7 +1488,7 @@
     "birthBlock": 11970506
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "avalanche",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1500,7 +1500,7 @@
     "birthBlock": 11970506
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "avalanche",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1512,7 +1512,7 @@
     "birthBlock": 11970506
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "avalanche",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1524,7 +1524,7 @@
     "birthBlock": 11970506
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "avalanche",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1536,7 +1536,7 @@
     "birthBlock": 11970506
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "avalanche",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1548,7 +1548,7 @@
     "birthBlock": 11970506
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "avalanche",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1560,7 +1560,7 @@
     "birthBlock": 11970506
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "avalanche",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1572,7 +1572,7 @@
     "birthBlock": 11970506
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "avalanche",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1584,7 +1584,7 @@
     "birthBlock": 11970506
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "arbitrum",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1596,7 +1596,7 @@
     "birthBlock": 7742429
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "arbitrum",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1608,7 +1608,7 @@
     "birthBlock": 7742429
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "arbitrum",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1620,7 +1620,7 @@
     "birthBlock": 7742429
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "arbitrum",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1632,7 +1632,7 @@
     "birthBlock": 7742429
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "arbitrum",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1644,7 +1644,7 @@
     "birthBlock": 7742429
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "arbitrum",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1656,7 +1656,7 @@
     "birthBlock": 7742429
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "arbitrum",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1668,7 +1668,7 @@
     "birthBlock": 7742429
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "arbitrum",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1680,7 +1680,7 @@
     "birthBlock": 7742429
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "arbitrum",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1692,7 +1692,7 @@
     "birthBlock": 7742429
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "arbitrum",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1704,7 +1704,7 @@
     "birthBlock": 7742429
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "arbitrum",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1716,7 +1716,7 @@
     "birthBlock": 7742429
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "arbitrum",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1728,7 +1728,7 @@
     "birthBlock": 7742429
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "arbitrum",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1740,7 +1740,7 @@
     "birthBlock": 7742429
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "arbitrum",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1752,7 +1752,7 @@
     "birthBlock": 7742429
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "arbitrum",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1764,7 +1764,7 @@
     "birthBlock": 7742429
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "optimism",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1776,7 +1776,7 @@
     "birthBlock": 4365693
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "optimism",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1788,7 +1788,7 @@
     "birthBlock": 4365693
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "optimism",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1800,7 +1800,7 @@
     "birthBlock": 4365693
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "optimism",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1812,7 +1812,7 @@
     "birthBlock": 4365693
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "optimism",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1824,7 +1824,7 @@
     "birthBlock": 4365693
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "optimism",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1836,7 +1836,7 @@
     "birthBlock": 4365693
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "optimism",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1848,7 +1848,7 @@
     "birthBlock": 4365693
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "optimism",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1860,7 +1860,7 @@
     "birthBlock": 4365693
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "optimism",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1872,7 +1872,7 @@
     "birthBlock": 4365693
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "optimism",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1884,7 +1884,7 @@
     "birthBlock": 4365693
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "optimism",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1896,7 +1896,7 @@
     "birthBlock": 4365693
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "optimism",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1908,7 +1908,7 @@
     "birthBlock": 4365693
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "optimism",
     "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
     "token": {
@@ -1920,7 +1920,7 @@
     "birthBlock": 4365693
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "base",
     "address": "0xa238dd80c259a72e81d7e4664a9801593f98d1c5",
     "token": {
@@ -1932,7 +1932,7 @@
     "birthBlock": 2357134
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "base",
     "address": "0xa238dd80c259a72e81d7e4664a9801593f98d1c5",
     "token": {
@@ -1944,7 +1944,7 @@
     "birthBlock": 2357134
   },
   {
-    "protocol": "aavev2",
+    "protocol": "aavev3",
     "chain": "base",
     "address": "0xa238dd80c259a72e81d7e4664a9801593f98d1c5",
     "token": {
