@@ -3,7 +3,7 @@ import EnvConfig from '../../configs/envConfig';
 import logger from '../../lib/logger';
 import { getStartDayTimestamp, getTimestamp, getTodayUTCTimestamp } from '../../lib/utils';
 import { LendingMarketConfig } from '../../types/configs';
-import { DataMetric, LendingMarketSnapshot } from '../../types/domain';
+import { DataMetric } from '../../types/domain';
 import { ContextServices, ICollector } from '../../types/namespaces';
 import { CollectorOptions } from '../../types/options';
 
@@ -74,7 +74,7 @@ export class BaseCollector implements ICollector {
 
     while (startTime <= today) {
       const startExeTime = getTimestamp();
-      const snapshots: Array<LendingMarketSnapshot> | null = await this.getSnapshot(startTime);
+      const snapshots: Array<any> | null = await this.getSnapshot(startTime);
 
       if (snapshots) {
         for (const snapshot of snapshots) {

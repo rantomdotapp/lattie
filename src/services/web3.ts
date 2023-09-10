@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Contract, Web3 } from 'web3';
+import { Contract, HttpProvider, Web3 } from 'web3';
 
 import Erc20Abi from '../configs/abi/ERC20.json';
 import { AddressEee, AddressZero, HardCodeTokens, TokenLists, TokenNatives } from '../configs/constants';
@@ -21,7 +21,13 @@ export class Web3Service extends Memcache implements IWeb3Service {
     this.providers = {};
 
     for (const [chain, config] of Object.entries(EnvConfig.blockchains)) {
-      this.providers[chain] = new Web3(config.nodeRpc);
+      this.providers[chain] = new Web3(
+        new HttpProvider(config.nodeRpc, {
+          providerOptions: {
+            keepalive: false,
+          },
+        }),
+      );
     }
   }
 

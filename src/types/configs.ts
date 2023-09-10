@@ -87,6 +87,27 @@ export interface LendingMarketConfig {
   contracts?: any;
 }
 
+export interface MasterchefPool {
+  pid: number;
+  stakingToken: {
+    address: string;
+
+    // used if staking token is LP
+    token0: Token | number;
+    token1: Token | number;
+  };
+}
+
+export type MasterchefVersion = 'masterchef' | 'masterchefV2' | 'minichef';
+export interface MasterchefConfig {
+  version: MasterchefVersion;
+  protocol: string;
+  chain: string;
+  address: string;
+  birthBlock: number;
+  pools: Array<MasterchefPool>;
+}
+
 export const LiquidityPoolVersions: Array<string> = ['univ2', 'univ3'];
 export type LiquidityPoolVersion = (typeof LiquidityPoolVersions)[number];
 
