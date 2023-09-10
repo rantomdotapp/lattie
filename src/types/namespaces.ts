@@ -1,5 +1,5 @@
 import { Collection } from 'mongodb';
-import { Web3 } from 'web3';
+import Web3 from 'web3';
 
 import { LendingMarketConfig, Token } from './configs';
 import { DataMetric } from './domain';

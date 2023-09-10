@@ -1,5 +1,5 @@
 import MasterchefAbi from '../../configs/abi/sushi/masterchef.json';
-// import MasterchefV2Abi from '../../configs/abi/sushi/masterchefV2.json';
+import MasterchefV2Abi from '../../configs/abi/sushi/masterchefV2.json';
 import UniswapV2Pair from '../../configs/abi/uniswap/UniswapV2Pair.json';
 import { normalizeAddress, sleep } from '../../lib/utils';
 import { Web3Service } from '../../services/web3';
@@ -27,7 +27,7 @@ export async function getSushiMasterchefPools(): Promise<Array<MasterchefPoolCon
       params: [],
     });
 
-    console.log(`Getting ${poolLength} pools from masterchef ${protocol} ${chain} ${address}`);
+    console.log(`Getting ${poolLength} pools from ${version} ${protocol} ${chain} ${address}`);
 
     for (let pid = 0; pid < Number(poolLength); pid++) {
       const pool: MasterchefPoolConstant = {
@@ -81,10 +81,46 @@ export async function getSushiMasterchefPools(): Promise<Array<MasterchefPoolCon
           }
         }
       } else if (version === 'masterchefV2') {
+        let recall = true;
+        while (recall) {
+          try {
+            const lpToken = await web3Service.singlecall({
+              chain,
+              address,
+              abi: MasterchefV2Abi,
+              method: 'lpToken',
+              params: [pid],
+            });
+            try {
+              const token0Address = await web3Service.singlecall({
+                chain,
+                address: lpToken,
+                abi: UniswapV2Pair,
+                method: 'token0',
+                params: [],
+              });
+              const token1Address = await web3Service.singlecall({
+                chain,
+                address: lpToken,
+                abi: UniswapV2Pair,
+                method: 'token1',
+                params: [],
+              });
+              pool.stakingToken.token0 = await web3Service.getTokenErc20Info(chain, token0Address);
+              pool.stakingToken.token1 = await web3Service.getTokenErc20Info(chain, token1Address);
+            } catch (e: any) {}
+
+            pool.stakingToken.address = normalizeAddress(lpToken);
+
+            recall = false;
+          } catch (e: any) {
+            await sleep(2);
+          }
+        }
       }
 
       console.log(
-        `Got masterchef pool ${protocol} ${chain} ${address} ${pid}-${pool.stakingToken.address} ${
+        `Got ${version} pool ${protocol} ${chain} ${address} ${pid}-${pool.stakingToken.address} ${
           pool.stakingToken.token0 && pool.stakingToken.token1
             ? pool.stakingToken.token0.symbol + '-' + pool.stakingToken.token1.symbol
             : ''
