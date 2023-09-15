@@ -1,4 +1,4 @@
-import { LendingMarketConfig } from './configs';
+import { LendingMarketConfig, MasterchefConfig } from './configs';
 import { DataMetric } from './domain';
 
 export interface Web3SingleCallOptions {
@@ -12,8 +12,13 @@ export interface Web3SingleCallOptions {
 
 export interface CollectorOptions {
   metric: DataMetric;
-  config: LendingMarketConfig;
+  config: LendingMarketConfig | MasterchefConfig;
   fromTime: number;
+}
+
+export interface TerminalOptions {
+  metric: DataMetric;
+  config: LendingMarketConfig | MasterchefConfig;
 }
 
 export interface GetBlockTimesOptions {

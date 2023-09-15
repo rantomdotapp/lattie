@@ -2,7 +2,7 @@ import { GenesisTimes } from '../../configs';
 import EnvConfig from '../../configs/envConfig';
 import logger from '../../lib/logger';
 import { getStartDayTimestamp, getTimestamp, getTodayUTCTimestamp } from '../../lib/utils';
-import { LendingMarketConfig } from '../../types/configs';
+import { LendingMarketConfig, MasterchefConfig } from '../../types/configs';
 import { DataMetric } from '../../types/domain';
 import { ContextServices, ICollector } from '../../types/namespaces';
 import { CollectorOptions } from '../../types/options';
@@ -12,7 +12,7 @@ export class BaseCollector implements ICollector {
   public readonly services: ContextServices;
   public readonly metric: DataMetric;
   public readonly fromTime: number;
-  public readonly config: LendingMarketConfig;
+  public readonly config: LendingMarketConfig | MasterchefConfig;
 
   constructor(services: ContextServices, options: CollectorOptions) {
     this.services = services;
@@ -26,13 +26,13 @@ export class BaseCollector implements ICollector {
   }
 
   public async run(): Promise<void> {
-    const statesCollection = await this.services.mongo.getCollection(EnvConfig.mongo.collections.states);
-    const metricsCollection = await this.services.mongo.getCollection(EnvConfig.mongo.collections.metrics);
+    const statesCollection = await this.services.mongoServe.getCollection(EnvConfig.mongo.collections.states);
+    const metricsCollection = await this.services.mongoServe.getCollection(EnvConfig.mongo.collections.metrics);
 
     let startTime = 0;
 
     // we find last sync timestamp from database
-    const stateKey: string = `snapshot-contract-${this.metric}-${this.config.chain}-${this.config.address}`;
+    const stateKey: string = `snapshot-${this.metric}-${this.config.chain}-${this.config.address}`;
     const states: Array<any> = await statesCollection
       .find({
         name: stateKey,
@@ -67,7 +67,6 @@ export class BaseCollector implements ICollector {
       protocol: this.config.protocol,
       chain: this.config.chain,
       address: this.config.address,
-      token: this.config.token.symbol,
       from: new Date(startTime * 1000).toISOString().split('T')[0],
       to: new Date(today * 1000).toISOString().split('T')[0],
     });
@@ -122,9 +121,8 @@ export class BaseCollector implements ICollector {
         protocol: this.config.protocol,
         chain: this.config.chain,
         address: this.config.address,
-        token: this.config.token.symbol,
         date: new Date(startTime * 1000).toISOString().split('T')[0],
-        elapsed: `${Math.floor(elapsed / 1000)}ms`,
+        elapsed: `${elapsed}s`,
       });
 
       startTime += 24 * 60 * 60;

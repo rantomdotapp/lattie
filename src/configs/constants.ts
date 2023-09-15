@@ -44,6 +44,45 @@ export const TokenNatives: { [key: string]: Token } = {
   },
 };
 
+export const TokenWrapNatives: { [key: string]: Token } = {
+  ethereum: {
+    chain: 'ethereum',
+    symbol: 'WETH',
+    decimals: 18,
+    address: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2',
+  },
+  base: {
+    chain: 'ethereum',
+    symbol: 'WETH',
+    decimals: 18,
+    address: '0x4200000000000000000000000000000000000006',
+  },
+  polygon: {
+    chain: 'polygon',
+    symbol: 'WMATIC',
+    decimals: 18,
+    address: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270',
+  },
+  avalanche: {
+    chain: 'avalanche',
+    symbol: 'WAVAX',
+    decimals: 18,
+    address: '0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7',
+  },
+  arbitrum: {
+    chain: 'arbitrum',
+    symbol: 'WETH',
+    decimals: 18,
+    address: '0x82af49447d8a07e3bd95bd0d56f35241523fbab1',
+  },
+  optimism: {
+    chain: 'optimism',
+    symbol: 'WETH',
+    decimals: 18,
+    address: '0x4200000000000000000000000000000000000006',
+  },
+};
+
 export const TokenLists: { [key: string]: { [key: string]: Token } } = {
   ethereum: EthereumTokenList,
   arbitrum: ArbitrumTokenList,

@@ -6,9 +6,17 @@ import Web3 from 'web3';
 import Erc20Abi from '../../../configs/abi/ERC20.json';
 import UniswapV3PoolAbi from '../../../configs/abi/uniswap/UniswapV3Pool.json';
 import { normalizeAddress } from '../../../lib/utils';
-import { OraclePool2 } from '../../../types/configs';
+import { OraclePool2, Token } from '../../../types/configs';
+import { IWeb3Service } from '../../../types/namespaces';
 
 export interface UniswapGetSpotPriceOptions extends OraclePool2 {
+  blockNumber: number;
+}
+
+export interface UniswapGetLpSpotPriceOptions {
+  chain: string;
+  lpAddress: string;
+  tokenBase: Token;
   blockNumber: number;
 }
 
@@ -57,5 +65,31 @@ export class UniswapOracleLib {
     } else {
       return new BigNumber(pool.token1Price.toFixed(12)).toNumber();
     }
+  }
+
+  public static async getLpSpotPriceV2(web3: IWeb3Service, options: UniswapGetLpSpotPriceOptions): Promise<number> {
+    const baseBalance = await web3.singlecall({
+      chain: options.chain,
+      address: options.tokenBase.address,
+      abi: Erc20Abi,
+      method: 'balanceOf',
+      params: [options.lpAddress],
+      blockNumber: options.blockNumber,
+    });
+    const lpSupply = await web3.singlecall({
+      chain: options.chain,
+      address: options.lpAddress,
+      abi: Erc20Abi,
+      method: 'totalSupply',
+      params: [],
+      blockNumber: options.blockNumber,
+    });
+
+    // LpSpotPrice = BaseTokenBalance * 2 / LpSupply
+    return new BigNumber(baseBalance.toString())
+      .multipliedBy(2e18)
+      .dividedBy(lpSupply.toString())
+      .dividedBy(new BigNumber(10).pow(options.tokenBase.decimals))
+      .toNumber();
   }
 }

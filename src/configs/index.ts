@@ -24,4 +24,5 @@ export const OracleChainlinkConfigs: { [key: string]: OracleConfig } = {
 
 export const GenesisTimes: { [key: string]: number } = {
   lending: 1609459200,
+  masterchef: 1609459200, // Fri Jan 01 2021 00:00:00 GMT+0000
 };

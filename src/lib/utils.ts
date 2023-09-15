@@ -30,6 +30,10 @@ export const shortenAddress = (address: string, chars = 6) => {
   return `${address.substring(0, chars + 2)}...${address.substring(42 - chars)}`;
 };
 
-export function compareToken(token0: Token, token1: Token): boolean {
+export function compareToken(token0: Token | null, token1: Token | null): boolean {
+  if (token0 === null || token1 === null) {
+    return false;
+  }
+
   return compareAddress(token0.address, token1.address) && token0.chain === token1.chain;
 }

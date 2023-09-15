@@ -1,7 +1,7 @@
 import { Collection } from 'mongodb';
 import Web3 from 'web3';
 
-import { LendingMarketConfig, Token } from './configs';
+import { LendingMarketConfig, MasterchefConfig, Token } from './configs';
 import { DataMetric } from './domain';
 import { BlockAndTime, GetBlockTimesOptions, IndexOptions, Web3SingleCallOptions } from './options';
 
@@ -49,6 +49,7 @@ export interface IOracleService extends IProvider {
 
 export interface ContextServices {
   mongo: IMongoService;
+  mongoServe: IMongoService;
   web3: IWeb3Service;
   oracle: IOracleService;
 }
@@ -56,10 +57,25 @@ export interface ContextServices {
 export interface ICollector extends IProvider {
   services: ContextServices;
   metric: DataMetric;
-  config: LendingMarketConfig;
+  config: LendingMarketConfig | MasterchefConfig;
 
   // get metric data snapshot
   getSnapshot: (timestamp: number) => Promise<Array<any> | null>;
+
+  // run daemon updater
+  run: () => Promise<void>;
+}
+
+export interface ITerminal extends IProvider {
+  services: ContextServices;
+  metric: DataMetric;
+  config: LendingMarketConfig | MasterchefConfig;
+
+  // get all addresses which have already used the protocol
+  getAddresses: () => Promise<Array<string>>;
+
+  // get current address snapshot data
+  getAddressSnapshot: (address: string, timestamp: number) => Promise<any>;
 
   // run daemon updater
   run: () => Promise<void>;

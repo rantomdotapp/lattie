@@ -1,4 +1,4 @@
-import { LendingMarketVersion, Token } from './configs';
+import { LendingMarketVersion, MasterchefPool, MasterchefVersion, Token } from './configs';
 
 export interface ContractLog {
   chain: string;
@@ -11,7 +11,7 @@ export interface ContractLog {
   logIndex: number;
 }
 
-export type DataMetric = 'lending';
+export type DataMetric = 'lending' | 'masterchef';
 
 export interface SnapshotMetadata {
   metric: DataMetric;
@@ -53,4 +53,44 @@ export interface LendingMarketSnapshot extends SnapshotMetadata, LendingTokenSna
 
   // used for CDP or multiple collateral for a single borrow token protocol
   collateralAssets?: Array<LendingTokenSnapshot>;
+}
+
+export interface MasterchefSnapshot extends SnapshotMetadata {
+  // protocol own this market
+  protocol: string;
+
+  // the blockchain on where this market operate
+  chain: string;
+  version: MasterchefVersion;
+
+  // the masterchef contract address
+  address: string;
+
+  // unique farmer addresses count
+  userCount: number;
+
+  // total volume USD
+  // we calculate the price of LP tokens
+  totalVolumeUSD: number;
+
+  // number of transactions
+  transactionCount: number;
+}
+
+export interface MasterchefAddressPositionData extends MasterchefPool {
+  // total deposit volume from the beginning
+  depositVolume: number;
+  // current balance deposited
+  depositBalance: number;
+  // the first time deposit timestamp
+  depositFirstTime: number;
+}
+
+export interface MasterchefAddressSnapshot extends SnapshotMetadata {
+  chain: string;
+  protocol: string;
+  version: string;
+  masterchef: string; // masterchef contract address
+  address: string; // user address
+  positions: Array<MasterchefAddressPositionData>;
 }

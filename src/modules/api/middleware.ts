@@ -16,7 +16,7 @@ export function writeResponse(request: Request, response: Response, status: numb
     method: request.method,
     path: request.url,
     status: status,
-    elapsed: `${Math.floor(elapsed / 1000)}ms`,
+    elapsed: `${elapsed}ms`,
     ip: request.header('CF-Connecting-IP')
       ? request.header('CF-Connecting-IP')
       : `${request.socket.remoteFamily}:${request.socket.remoteAddress}`,

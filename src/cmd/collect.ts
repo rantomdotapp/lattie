@@ -1,7 +1,8 @@
 import { LendingMarketConfigs } from '../configs/lending';
+import { MasterchefConfigs } from '../configs/masterchef';
 import { sleep } from '../lib/utils';
 import { getCollectorWithConfig } from '../modules/collector/manager';
-import { LendingMarketConfig } from '../types/configs';
+import { LendingMarketConfig, MasterchefConfig } from '../types/configs';
 import { ICollector } from '../types/namespaces';
 import { BasicCommand } from './basic';
 
@@ -17,17 +18,23 @@ export class CollectCommand extends BasicCommand {
     const services = await super.getServices();
 
     const metric = argv.metric;
-    if (['liquidity', 'lending'].indexOf(metric) === -1) {
+    if (['masterchef', 'lending'].indexOf(metric) === -1) {
       console.error(`Do not support metric ${metric}`);
       process.exit(0);
     }
 
-    let configs: Array<LendingMarketConfig> = [];
+    let configs: Array<LendingMarketConfig | MasterchefConfig> = [];
     if (metric === 'lending') {
       if (argv.protocol !== '') {
         configs = LendingMarketConfigs.filter((item) => item.protocol === argv.protocol);
       } else {
         configs = LendingMarketConfigs;
+      }
+    } else {
+      if (argv.protocol !== '') {
+        configs = MasterchefConfigs.filter((item) => item.protocol === argv.protocol);
+      } else {
+        configs = MasterchefConfigs;
       }
     }
 

@@ -4,6 +4,7 @@ import yargs from 'yargs/yargs';
 import { CollectCommand } from './cmd/collect';
 import { LogindexCommand } from './cmd/logindex';
 import { ServeCommand } from './cmd/serve';
+import { TerminalCommand } from './cmd/terminal';
 import { TestCommand } from './cmd/test';
 import { UpdateCommand } from './cmd/update';
 
@@ -12,6 +13,7 @@ import { UpdateCommand } from './cmd/update';
 
   const serveCmd = new ServeCommand();
   const collectCmd = new CollectCommand();
+  const terminalCmd = new TerminalCommand();
   const updateCmd = new UpdateCommand();
   const testCmd = new TestCommand();
   const indexCmd = new LogindexCommand();
@@ -20,6 +22,7 @@ import { UpdateCommand } from './cmd/update';
     .scriptName('lattie')
     .command(serveCmd.name, serveCmd.describe, serveCmd.setOptions, serveCmd.execute)
     .command(collectCmd.name, collectCmd.describe, collectCmd.setOptions, collectCmd.execute)
+    .command(terminalCmd.name, terminalCmd.describe, terminalCmd.setOptions, terminalCmd.execute)
     .command(updateCmd.name, updateCmd.describe, updateCmd.setOptions, updateCmd.execute)
     .command(indexCmd.name, indexCmd.describe, indexCmd.setOptions, indexCmd.execute)
     .command(testCmd.name, testCmd.describe, testCmd.setOptions, testCmd.execute)

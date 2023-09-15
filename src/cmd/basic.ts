@@ -12,16 +12,19 @@ export class BasicCommand {
 
   public async getServices(): Promise<ContextServices> {
     const mongo = new MongoService();
+    const mongoServe = new MongoService();
     const web3 = new Web3Service();
     const oracle = new OracleService(mongo, web3);
 
     const providers: ContextServices = {
       mongo: mongo,
+      mongoServe: mongoServe,
       web3: web3,
       oracle: oracle,
     };
 
     await providers.mongo.connect(envConfig.mongo.connectionUri, envConfig.mongo.databaseName);
+    await providers.mongoServe.connect(envConfig.mongo.connectionUriServe, envConfig.mongo.databaseName);
 
     return providers;
   }

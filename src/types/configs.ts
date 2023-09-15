@@ -17,11 +17,13 @@ export interface EnvConfig {
   mongo: {
     databaseName: string;
     connectionUri: string;
+    connectionUriServe: string;
     collections: {
       states: string;
       metrics: string;
       oracles: string;
       rawlogs: string;
+      terminal: string;
     };
   };
   sentry: {
@@ -93,8 +95,8 @@ export interface MasterchefPool {
     address: string;
 
     // used if staking token is LP
-    token0: Token | number;
-    token1: Token | number;
+    token0: Token | null;
+    token1: Token | null;
   };
 }
 

@@ -629,7 +629,12 @@
         "decimals": 8,
         "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
       },
-      "token1": null
+      "token1": {
+        "chain": "ethereum",
+        "address": "0xeb4c2781e4eba804ce9a9803c67d0893436bb27d",
+        "symbol": "renBTC",
+        "decimals": 8
+      }
     }
   },
   {
@@ -2470,7 +2475,12 @@
     "address": "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd",
     "stakingToken": {
       "address": "0x0eee7f7319013df1f24f5eaf83004fcf9cf49245",
-      "token0": null,
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x374cb8c27130e2c9e04f44303f3c8351b9de61c1",
+        "symbol": "BAO",
+        "decimals": 18
+      },
       "token1": {
         "chain": "ethereum",
         "symbol": "WETH",
@@ -6337,7 +6347,21 @@
     "pid": 329,
     "version": "masterchef",
     "address": "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd",
-    "stakingToken": { "address": "0xec8c342bc3e07f05b9a782bc34e7f04fb9b44502", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xec8c342bc3e07f05b9a782bc34e7f04fb9b44502",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "FRAX",
+        "decimals": 18,
+        "address": "0x853d955acef822db058eb8505911ed77f175b99e"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6545,7 +6569,12 @@
     "address": "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd",
     "stakingToken": {
       "address": "0x1365707157a1ec841064a18d2a1771c677df9a1c",
-      "token0": null,
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x8eef5a82e6aa222a60f009ac18c24ee12dbf4b41",
+        "symbol": "TXL",
+        "decimals": 18
+      },
       "token1": {
         "chain": "ethereum",
         "symbol": "WETH",
@@ -6862,7 +6891,21 @@
     "pid": 0,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xc3f279090a47e80990fe3a9c30d24cb117ef91a8",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "ALCX",
+        "decimals": 18,
+        "address": "0xdbdb4d16eda451d0503b854cf79d55697f90c8df"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6870,7 +6913,21 @@
     "pid": 1,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x05767d9ef41dc40689678ffca0608878fb3de906",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "CVX",
+        "decimals": 18,
+        "address": "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6878,7 +6935,21 @@
     "pid": 2,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x33f6ddaea2a8a54062e021873bcaee006cdf4007",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x62b9c7356a2dc64a1969e19c23e4f579f9810aa7",
+        "symbol": "cvxCRV",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "CRV",
+        "decimals": 18,
+        "address": "0xd533a949740bb3306d119cc777fa900ba034cd52"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6886,7 +6957,21 @@
     "pid": 3,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x269db91fc3c7fcc275c2e6f22e5552504512811c",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x429881672b9ae42b8eba0e26cd9c73711b891ca5",
+        "symbol": "PICKLE",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6894,7 +6979,21 @@
     "pid": 4,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xb2c29e311916a346304f83aa44527092d5bd4f0f",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x8888801af4d980682e47f1a9036e589479e835c5",
+        "symbol": "MPH",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6902,7 +7001,7 @@
     "pid": 5,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": { "address": "0xa730d4679de7b1fd554dbb4258780eb821979250", "token0": null, "token1": null }
   },
   {
     "chain": "ethereum",
@@ -6910,7 +7009,21 @@
     "pid": 6,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x99b42f2b49c395d2a77d973f6009abb5d67da343",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "YGG",
+        "decimals": 18,
+        "address": "0x25f8087ead173b73d6e8b84329989a8eea16cf73"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6918,7 +7031,21 @@
     "pid": 7,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xb1eecfea192907fc4bf9c4ce99ac07186075fc51",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x2aeccb42482cc64e087b6d2e5da39f5a7a7001f8",
+        "symbol": "RULER",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6926,7 +7053,21 @@
     "pid": 8,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xfceaaf9792139bf714a694f868a215493461446d",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "TRU",
+        "decimals": 8,
+        "address": "0x4c19596f5aaff459fa38b0f7ed92f11ae6543784"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6934,7 +7075,21 @@
     "pid": 9,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x17890deb188f2de6c3e966e053da1c9a111ed4a5",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "USDC",
+        "decimals": 6,
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "CQT",
+        "decimals": 18,
+        "address": "0xd417144312dbf50465b1c641d016962017ef6240"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6942,7 +7097,21 @@
     "pid": 10,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x30045ad74f4475e82dcdc269952581ecb7cd2bad",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "address": "0xd23ac27148af6a2f339bd82d0e3cff380b5093de",
+        "symbol": "SI",
+        "decimals": 18
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6950,7 +7119,21 @@
     "pid": 11,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x15e86e6f65ef7ea1dbb72a5e51a07926fb1c82e3",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "AMP",
+        "decimals": 18,
+        "address": "0xff20817765cb7f73d4bde2e66e067e58d11095c2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6958,7 +7141,21 @@
     "pid": 12,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xe9a889e6963f122a98f8083d951c71329c726c0a",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0xaaca86b876ca011844b5798eca7a67591a9743c8",
+        "symbol": "BIOS",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6966,7 +7163,21 @@
     "pid": 13,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x6469b34a2a4723163c4902dbbdea728d20693c12",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x85f17cf997934a597031b2e18a9ab6ebd4b9f6a4",
+        "symbol": "NEAR",
+        "decimals": 24
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6974,7 +7185,21 @@
     "pid": 14,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xd4e7a6e2d03e4e48dfc27dd3f46df1c176647e38",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "TOKE",
+        "decimals": 18,
+        "address": "0x2e9d63788249371f1dfc918a52f8d799f4a38c94"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6982,7 +7207,21 @@
     "pid": 15,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xc5578194d457dcce3f272538d1ad52c68d1ce849",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "DAI",
+        "decimals": 18,
+        "address": "0x6b175474e89094c44da98b954eedeac495271d0f"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+        "symbol": "wstETH",
+        "decimals": 18
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6990,7 +7229,21 @@
     "pid": 16,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x877d9c970b8b5501e95967fe845b7293f63e72f7",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "address": "0xf203ca1769ca8e9e8fe1da9d147db68b6c919817",
+        "symbol": "WNCG",
+        "decimals": 18
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -6998,7 +7251,21 @@
     "pid": 17,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xe12af1218b4e9272e9628d7c7dc6354d137d024e",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "BIT",
+        "decimals": 18,
+        "address": "0x1a4b46696b2bb4794eb3d4c26f1c55f9170fa4c5"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7006,7 +7273,21 @@
     "pid": 18,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xe4ebd836832f1a8a81641111a5b081a2f90b9430",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "DYDX",
+        "decimals": 18,
+        "address": "0x92d6c1e31e14520e676a687f0a93788b716beff5"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7014,7 +7295,21 @@
     "pid": 19,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xcfa9a297a406a48d1137172c18de04c944b47ba9",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "address": "0xe2311ae37502105b442bbef831e9b53c5d2e9b3b",
+        "symbol": "BANANA",
+        "decimals": 18
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7022,7 +7317,21 @@
     "pid": 20,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x53162d78dca413d9e28cf62799d17a9e278b60e8",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x4104b135dbc9609fc1a9490e61369036497660c8",
+        "symbol": "APW",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7030,7 +7339,21 @@
     "pid": 21,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xb50580b0d81d9fe860746387cef9a8fc36d48d49",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x16cda4028e9e872a38acb903176719299beaed87",
+        "symbol": "MARS4",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7038,7 +7361,21 @@
     "pid": 22,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xf79321e80acd5fa590936f09acb90ec6471fcbc4",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x3c8d2fce49906e11e71cb16fa0ffeb2b16c29638",
+        "symbol": "NFTL",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7046,7 +7383,21 @@
     "pid": 23,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x1e888882d0f291dd88c5605108c72d414f29d460",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "USDC",
+        "decimals": 6,
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "address": "0xba8a621b4a54e61c442f5ec623687e2a942225ef",
+        "symbol": "QUARTZ",
+        "decimals": 18
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7054,7 +7405,21 @@
     "pid": 24,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xa1181481beb2dc5de0daf2c85392d81c704bf75d",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "ENS",
+        "decimals": 18,
+        "address": "0xc18360217d8f7ab5e7c516566761ea12ce7f9d72"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7062,7 +7427,21 @@
     "pid": 25,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x53813285cc60b13fcd2105c6472a47af01f8ac84",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x725c263e32c72ddc3a19bea12c5a0479a81ee688",
+        "symbol": "BMI",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7070,7 +7449,21 @@
     "pid": 26,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x295685c8fe08d8192981d21ea1fe856a07443920",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "GODS",
+        "decimals": 18,
+        "address": "0xccc8cb5229b0ac8069c51fd58367fd1e622afd97"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7078,7 +7471,21 @@
     "pid": 27,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x18cd890f4e23422dc4aa8c2d6e0bd3f3bd8873d8",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "IMX",
+        "decimals": 18,
+        "address": "0xf57e7e7c23978c3caec3c3548e3d615c346e79ff"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7086,7 +7493,21 @@
     "pid": 28,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x37fc088cfd67349be00f5504d00ddb7f2274b3f6",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x72b886d09c117654ab7da13a14d603001de0b777",
+        "symbol": "XDEFI",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7094,7 +7515,21 @@
     "pid": 29,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xb2aef5dbec896830b7391c3d7dee130ad36b8e9f",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x44e2dec86b9f0e0266e9aa66e10323a2bd69cf9a",
+        "symbol": "ATTR",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7102,7 +7537,21 @@
     "pid": 30,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x6e939360196c7f044871b17770268e8a04556121",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x47252a63c723889814aebcac0683e615624cec64",
+        "symbol": "NIL",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7110,7 +7559,21 @@
     "pid": 31,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x458ae80894a0924ac763c034977e330c565f1687",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "address": "0xcafe001067cdef266afb7eb5a286dcfd277f3de5",
+        "symbol": "PSP",
+        "decimals": 18
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7118,7 +7581,21 @@
     "pid": 32,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xfe9a776154f30281517d4f06578591911906f4e1",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "USDC",
+        "decimals": 6,
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "address": "0xfb782396c9b20e564a64896181c7ac8d8979d5f4",
+        "symbol": "DIVER",
+        "decimals": 18
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7126,7 +7603,21 @@
     "pid": 33,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x7c03cf21483fa45006e81669b991af3a16733a44",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0xc36b4311b21fc0c2ead46f1ea6ce97c9c4d98d3d",
+        "symbol": "CRE8",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "USDT",
+        "decimals": 6,
+        "address": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7134,7 +7625,21 @@
     "pid": 34,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x1b803af96f37ae51fa753e13e1d2e372dfa17791",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x00813e3421e1367353bfe7615c7f7f133c89df74",
+        "symbol": "SPS",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7142,7 +7647,21 @@
     "pid": 35,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x55d8ec728ea72477c6db12ca497a803c8db361e9",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "BICO",
+        "decimals": 18,
+        "address": "0xf17e65822b568b3903685a7c9f496cf7656cc6c2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7150,7 +7669,21 @@
     "pid": 36,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xea9b00b169dda4cbc9fa0a64b0d1e4a6a23a3f34",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x39fbbabf11738317a448031930706cd3e612e1b9",
+        "symbol": "WXRP",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "USDC",
+        "decimals": 6,
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7158,7 +7691,21 @@
     "pid": 37,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xdd487b90450e90029b107d1c9ad9955cebd2c7e5",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x85d7bdfc9c3426b33a684241eeee70385bc42820",
+        "symbol": "WKDA",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "USDC",
+        "decimals": 6,
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7166,7 +7713,21 @@
     "pid": 38,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x0e05e398b979720504bcb9b15c43719cde84e530",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x53c4871322bb47e7a24136fce291a6dcc832a294",
+        "symbol": "WLTC",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "USDC",
+        "decimals": 6,
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7174,7 +7735,21 @@
     "pid": 39,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x29c827ce49accf68a1a278c67c9d30c52fbbc348",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "address": "0xcb84d72e61e383767c4dfeb2d8ff7f4fb89abc6e",
+        "symbol": "VEGA",
+        "decimals": 18
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7182,7 +7757,21 @@
     "pid": 40,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xec87cb93ecd0fe2f80dbd0d85431eacf1de09d50",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0xadd5e881984783dd432f80381fb52f45b53f3e70",
+        "symbol": "VITE",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7190,7 +7779,21 @@
     "pid": 41,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x4e726311e7036d7be9a9b2a1e9e00c48aeec28ae",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x7f0693074f8064cfbcf9fa6e5a3fa0e4f58ccccf",
+        "symbol": "gm",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7198,7 +7801,21 @@
     "pid": 42,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x559ebe4e206e6b4d50e9bd3008cda7ce640c52cb",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x44709a920fccf795fbc57baa433cc3dd53c44dbe",
+        "symbol": "RADAR",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7206,7 +7823,21 @@
     "pid": 43,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xb264dc9d22ece51aaa6028c5cbf2738b684560d6",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x1b890fd37cd50bea59346fc2f8ddb7cd9f5fabd5",
+        "symbol": "NEWO",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "USDC",
+        "decimals": 6,
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7214,7 +7845,21 @@
     "pid": 44,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xbb19141e045b133169d7c7160c5e54a54cc821b2",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x8a854288a5976036a725879164ca3e91d30c6a1b",
+        "symbol": "GET",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7222,7 +7867,21 @@
     "pid": 45,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xb84c45174bfc6b8f3eaecbae11dee63114f5c1b2",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x3b484b82567a09e2588a13d54d032153f0c0aee0",
+        "symbol": "SOS",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7230,7 +7889,21 @@
     "pid": 46,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x52dac05fc0000e9f01ce9a1e91592bfbfce87350",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x01ba67aac7f75f647d94220cc98fb30fcc5105bf",
+        "symbol": "LYRA",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7238,7 +7911,21 @@
     "pid": 47,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x7f7d686b05ce0b9b7b7b0b4d56207ace4b13a87a",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x6bba316c48b49bd1eac44573c5c871ff02958469",
+        "symbol": "GAS",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7246,7 +7933,21 @@
     "pid": 48,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x75507bab932fc47531bf1654f243c088a3fa1f69",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x70bef3bb2f001da2fddb207dae696cd9faff3f5d",
+        "symbol": "NST",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7254,7 +7955,21 @@
     "pid": 49,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xc2ce29af8930fc32ca24ccb76c2866fb2bf692fe",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x7f3141c4d6b047fb930991b450f1ed996a51cb26",
+        "symbol": "X",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7262,7 +7977,21 @@
     "pid": 50,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xeaadde1e14c587a7fb4ba78ea78109bb32975f1e",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x0de05f6447ab4d22c8827449ee4ba2d5c288379b",
+        "symbol": "OOKI",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7270,7 +7999,21 @@
     "pid": 51,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x5c596c6a65f628fc1090853d8eb1927651e9d9b2",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x9ab7bb7fdc60f4357ecfef43986818a2a3569c62",
+        "symbol": "GOG",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7278,7 +8021,21 @@
     "pid": 52,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xc08ed9a9abeabcc53875787573dc32eee5e43513",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x98585dfc8d9e7d48f0b1ae47ce33332cf4237d96",
+        "symbol": "NEWO",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "USDC",
+        "decimals": 6,
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7286,7 +8043,21 @@
     "pid": 53,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xfed8e81bd0fba2664e9bd9abfaffb77828f959b7",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "address": "0xe9f84de264e91529af07fa2c746e934397810334",
+        "symbol": "SAK3",
+        "decimals": 18
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7294,7 +8065,21 @@
     "pid": 54,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xdb06a76733528761eda47d356647297bc35a98bd",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "address": "0xe80c0cd204d654cebe8dd64a4857cab6be8345a3",
+        "symbol": "JPEG",
+        "decimals": 18
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7302,7 +8087,21 @@
     "pid": 55,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xb27c7b131cf4915bec6c4bc1ce2f33f9ee434b9f",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "APE",
+        "decimals": 18,
+        "address": "0x4d224452801aced8b2f0aebe155379bb5d594381"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "USDT",
+        "decimals": 6,
+        "address": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7310,7 +8109,21 @@
     "pid": 56,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xe93527d1f8c586353b13826c501fa5a69bce2b0e",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x807a0774236a0fbe9e7f8e7df49edfed0e6777ea",
+        "symbol": "BLOCK",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7318,7 +8131,21 @@
     "pid": 57,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xdbb69ea87507525fffbd1c4f1ad6f7d30a9a402e",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x46e98ffe40e408ba6412beb670507e083c8b95ff",
+        "symbol": "PRIMATE",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "APE",
+        "decimals": 18,
+        "address": "0x4d224452801aced8b2f0aebe155379bb5d594381"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7326,7 +8153,21 @@
     "pid": 58,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xed92bfe08de542bbb40fdbe0a27ca66313c0c457",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "address": "0xc5102fe9359fd9a28f877a67e36b0f050d81a3cc",
+        "symbol": "HOP",
+        "decimals": 18
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7334,7 +8175,21 @@
     "pid": 59,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x3d3f13f2529ec3c84b2940155effbf9b39a8f3ec",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0xa5f2211b9b8170f694421f2046281775e8468044",
+        "symbol": "THOR",
+        "decimals": 18
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7342,7 +8197,21 @@
     "pid": 60,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x9b880dd096ef74ef7e4b771526bd9584e0b8f7b5",
+      "token0": {
+        "chain": "ethereum",
+        "address": "0x471ea49dd8e60e697f4cac262b5fafcc307506e4",
+        "symbol": "xcRMRK",
+        "decimals": 10
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "USDT",
+        "decimals": 6,
+        "address": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7350,7 +8219,21 @@
     "pid": 61,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x0c6f06b32e6ae0c110861b8607e67da594781961",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "address": "0xf1dc500fde233a4055e25e5bbf516372bc4f6871",
+        "symbol": "SDL",
+        "decimals": 18
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7358,7 +8241,21 @@
     "pid": 62,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x90a70993d2a02f4d4769008c255873dfc9d308ff",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "BLUR",
+        "decimals": 18,
+        "address": "0x5283d291dbcf85356a21ba090e6db59121208b44"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7366,7 +8263,21 @@
     "pid": 63,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0x203b7c6e588532ae04b95509f2ff7c6926de1806",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "USDT",
+        "decimals": 6,
+        "address": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "address": "0xfcf8eda095e37a41e002e266daad7efc1579bc0a",
+        "symbol": "FLEX",
+        "decimals": 18
+      }
+    }
   },
   {
     "chain": "ethereum",
@@ -7374,6 +8285,20 @@
     "pid": 64,
     "version": "masterchefV2",
     "address": "0xef0881ec094552b2e128cf945ef17a6752b4ec5d",
-    "stakingToken": { "address": "", "token0": null, "token1": null }
+    "stakingToken": {
+      "address": "0xd27b7d42d24d8f7c1cf5c46ccd3b986c396fde17",
+      "token0": {
+        "chain": "ethereum",
+        "symbol": "LINK",
+        "decimals": 18,
+        "address": "0x514910771af9ca656af840dff83e8264ecf986ca"
+      },
+      "token1": {
+        "chain": "ethereum",
+        "address": "0xa95c5ebb86e0de73b4fb8c47a45b792cfea28c23",
+        "symbol": "SDL",
+        "decimals": 18
+      }
+    }
   }
 ]
