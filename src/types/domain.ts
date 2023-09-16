@@ -75,6 +75,15 @@ export interface MasterchefSnapshot extends SnapshotMetadata {
 
   // number of transactions
   transactionCount: number;
+
+  // reward token supply
+  rewardTokenSupply: number;
+
+  // new reward token minted
+  rewardTokenMinted: number;
+
+  // reward token price USD
+  rewardTokenPriceUsd: number;
 }
 
 export interface MasterchefAddressPositionData extends MasterchefPool {

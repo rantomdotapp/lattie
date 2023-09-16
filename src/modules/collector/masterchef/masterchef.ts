@@ -1,11 +1,11 @@
 import BigNumber from 'bignumber.js';
 
+import Erc20Abi from '../../../configs/abi/ERC20.json';
 import MasterchefAbi from '../../../configs/abi/sushi/masterchef.json';
 import UniswapV2Pair from '../../../configs/abi/uniswap/UniswapV2Pair.json';
 import { TokenWrapNatives } from '../../../configs/constants';
 import EnvConfig from '../../../configs/envConfig';
 import { normalizeAddress } from '../../../lib/utils';
-import { Memcache } from '../../../services/memcache';
 import { MasterchefConfig, MasterchefPool } from '../../../types/configs';
 import { MasterchefSnapshot } from '../../../types/domain';
 import { ContextServices } from '../../../types/namespaces';
@@ -115,6 +115,7 @@ export class MasterChefCollector extends BaseCollector {
 
     const abiCoder = this.services.web3.getProvider(this.config.chain).eth.abi;
     const blockNumber = await this.services.web3.getBlockAtTimestamp(config.chain, timestamp);
+    const blockNumberEndDate = await this.services.web3.getBlockAtTimestamp(config.chain, endDateTimestamp - 1);
 
     const rawlogsCollection = await this.services.mongo.getCollection(EnvConfig.mongo.collections.rawlogs);
 
@@ -162,6 +163,32 @@ export class MasterChefCollector extends BaseCollector {
 
     await cursor.close();
 
+    const rewardSupplyBefore = await this.services.web3.singlecall({
+      chain: config.chain,
+      address: config.rewardToken.address,
+      abi: Erc20Abi,
+      method: 'totalSupply',
+      params: [],
+      blockNumber: blockNumber,
+    });
+    const rewardSupplyAfter = await this.services.web3.singlecall({
+      chain: config.chain,
+      address: config.rewardToken.address,
+      abi: Erc20Abi,
+      method: 'totalSupply',
+      params: [],
+      blockNumber: blockNumberEndDate,
+    });
+    const rewardTokenMinted = new BigNumber(rewardSupplyAfter.toString())
+      .minus(new BigNumber(rewardSupplyBefore.toString()))
+      .dividedBy(new BigNumber(10).pow(config.rewardToken.decimals));
+
+    const rewardTokenPriceUsd = await this.services.oracle.getTokenPriceUSD(
+      config.chain,
+      config.rewardToken.address,
+      timestamp,
+    );
+
     return [
       {
         metric: 'masterchef',
@@ -174,6 +201,11 @@ export class MasterChefCollector extends BaseCollector {
         userCount: userCount,
         totalVolumeUSD: totalVolumeUSD,
         transactionCount: transactionCount,
+        rewardTokenSupply: new BigNumber(rewardSupplyAfter.toString())
+          .dividedBy(new BigNumber(10).pow(config.rewardToken.decimals))
+          .toNumber(),
+        rewardTokenMinted: rewardTokenMinted.toNumber(),
+        rewardTokenPriceUsd: rewardTokenPriceUsd,
       },
     ];
   }

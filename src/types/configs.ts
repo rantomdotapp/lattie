@@ -107,6 +107,7 @@ export interface MasterchefConfig {
   chain: string;
   address: string;
   birthBlock: number;
+  rewardToken: Token;
   pools: Array<MasterchefPool>;
 }
 
