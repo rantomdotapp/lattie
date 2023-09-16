@@ -85,6 +85,8 @@ export function getRouter(services: ContextServices): Router {
   router.get('/masterchef/snapshots/:protocol/:chain/:address', async (request, response) => {
     const metricsCollection = await services.mongoServe.getCollection(EnvConfig.mongo.collections.metrics);
 
+    const order = request.query.order && request.query.order === 'oldest' ? 1 : -1;
+
     const documents: Array<any> = await metricsCollection
       .find({
         protocol: request.params.protocol,
@@ -92,7 +94,7 @@ export function getRouter(services: ContextServices): Router {
         address: normalizeAddress(request.params.address),
         metric: 'masterchef',
       })
-      .sort({ timestamp: -1 })
+      .sort({ timestamp: order })
       .toArray();
 
     const snapshots: Array<any> = [];
